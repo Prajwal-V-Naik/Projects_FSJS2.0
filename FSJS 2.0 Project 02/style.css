@@ -1,0 +1,81 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+.container{
+    padding-right: 13%;
+    padding-left:13% ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+.navbar div:nth-child(1){
+    margin:0 50px;
+}
+.logo{
+    height:4vh;
+}
+.line{
+    border-left: 2px solid #ffffff;
+    height: 7vh; 
+}
+.grow-list{
+    width: 70%; 
+}
+.list-item{
+    color: #ffffff;
+    margin-left: 40px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.list-item:nth-child(1):after{
+    content: '\2304';
+    position: relative;
+    left: 6px;
+    bottom: 4px;
+}
+.button-small{
+    height: 35px;
+    width: 15vh;
+    border: none;
+    border-radius: 7px;
+    background-color: #ba0cc5;
+    color: #ffffff;
+}
+section:nth-child(2){
+    height: 100vh;
+    background: url('./assets/bg.png') no-repeat;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9% 0;
+}
+.hero-heading{
+    position: relative;
+    font-size: 80px;
+    text-align: center;
+    width: 70vh;
+    margin-bottom: 0%;
+    color: #ffffff;
+    
+}
+.hero-description{
+    margin-top: 0%;
+    font-size: 25px;
+    color: #ffffff;
+}
+.button-large{
+    margin-top: 19px;
+    height: 50px;
+    width: 30vh;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: #ba0cc5;
+    color: #ffffff;
+}
