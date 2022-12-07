@@ -128,11 +128,17 @@ section[aria-label="hero"]{
     }
 }
 @media (max-width:480px) {
+    .navbar{
+        padding: 10px;
+    }
     .line{
         display: none;
     }
     .button-small{
         margin-right: 0;
         font-size: 14px;
+    }
+    .button-large{
+        font-size: 20px;
     }
 }
