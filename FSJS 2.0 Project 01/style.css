@@ -1,0 +1,90 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+/* Created by Prajwal with Help of FSJS2.0 mentoring team */
+:root{
+    --bg--white: #ffffff;
+    --txt--black: #000000;
+    --txt--gray: #c7c7c7;
+    --txt--primary: #3c2f60;
+    --txt--secondary: #5955b3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bg--white);
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 48px 128px 48px 128px;
+}
+.navbar-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+img[alt="brand-logo"]{
+    width: 8rem;
+}
+.grow-list{
+    flex-basis: 70%;
+}
+.grow-list .list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.grow-list .list li{
+    font-size: 16px;
+    list-style: none;
+    color: var(--txt--gray);
+}
+.grow-list .list li:first-child{
+    color: var(--txt--black);
+}
+.button-group{
+    position: relative;
+    right: 60px;   
+}
+.nav-button{
+    background-color: var(--txt--secondary);
+    padding: 18px 32px;
+    border: none;
+    border-radius: 12px;
+    color: var(--bg--white);
+    font-size: 16px;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.banner-container div:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.heading-text{
+    font-size: 4vw;
+    color: var(--txt--primary);
+}
+.heading-text span{
+    color: var(--txt--secondary);
+}
+.description{
+    display: inline-block;
+    width: 380px;
+    margin: 2rem 0 2rem;
+    color: var(--txt--gray);
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+}
