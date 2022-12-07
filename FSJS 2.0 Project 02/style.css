@@ -1,35 +1,53 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
+/* Created by Prajwal with Help of FSJS2.0 mentoring team */
+/* Now this is well designed responsive UI*/
+:root{
+    --txt--white: #ffffff;
+    --bg--black: #000000;
+    --bg--secondary: #ba0cc5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins",sans-serif;
+}
+/*container*/
 .container{
-    padding-right: 13%;
-    padding-left:13% ;
+    height: 100%;
+    width: 100%;
+}
+/* navbar */
+section[aria-label="navbar"]{
+    color: var(--txt--white);
+    background-color: var(--bg--black);
 }
 .navbar{
     display: flex;
     align-items: center;
-    background-color: black;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 24px 64px;
 }
-.navbar div:nth-child(1){
-    margin:0 50px;
-}
-.logo{
-    height:4vh;
+img[alt="logo"]{
+    width: 100%;
+    height: 4vh;
 }
 .line{
-    border-left: 2px solid #ffffff;
-    height: 7vh; 
+    background-color: var(--txt--white);
+    width: 1px;
+    height: 5vh;
 }
 .grow-list{
-    width: 70%; 
+    flex-basis: 70%;
 }
-.list-item{
-    color: #ffffff;
-    margin-left: 40px;
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
+.list{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    list-style: none;
 }
 .list-item:nth-child(1):after{
     content: '\2304';
@@ -38,44 +56,83 @@
     bottom: 4px;
 }
 .button-small{
-    height: 35px;
-    width: 15vh;
     border: none;
-    border-radius: 7px;
-    background-color: #ba0cc5;
-    color: #ffffff;
+    border-radius: 6px;
+    background-color: var(--bg--secondary);
+    color: var(--txt--white);
+    padding: 12px 35px;
+    margin-right: 50px;
+    font-family: "Poppins",sans-serif;
 }
-section:nth-child(2){
-    height: 100vh;
-    background: url('./assets/bg.png') no-repeat;
+/* Hero Section */
+section[aria-label="hero"]{
+    background: url('./assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-inline: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 93vh;
 }
 .hero{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 9% 0;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    color: var(--txt--white);
 }
 .hero-heading{
-    position: relative;
-    font-size: 80px;
-    text-align: center;
-    width: 70vh;
-    margin-bottom: 0%;
-    color: #ffffff;
-    
+    max-width: 900px;
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-top: 32px;
 }
 .hero-description{
-    margin-top: 0%;
-    font-size: 25px;
-    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
 }
 .button-large{
-    margin-top: 19px;
-    height: 50px;
-    width: 30vh;
+    font-size: 2.2rem;
+    margin-top: 1rem;
     border: none;
-    border-radius: 7px;
-    font-size: 18px;
-    background-color: #ba0cc5;
-    color: #ffffff;
+    border-radius: 9px;
+    background-color: var(--bg--secondary);
+    color: var(--txt--white);
+    padding: 12px 25px;
+    font-family: "Poppins",sans-serif;
+    margin-top: 2.5rem;
+}
+@media (max-width:1024px) {
+    img[alt="logo"]{
+        height: 5vh;
+    }
+    .grow-list{
+        display: none;
+    }
+    .button-small{
+        margin-right: 0;
+        font-size: 14px;
+    }
+    .hero-heading{
+        font-size: 64px;
+    }
+    .hero-description, .button-large{
+        font-size: 32px;
+    }
+}
+@media (max-width:480px) {
+    .line{
+        display: none;
+    }
+    .button-small{
+        margin-right: 0;
+        font-size: 14px;
+    }
 }
