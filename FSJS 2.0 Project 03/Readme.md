@@ -1,4 +1,5 @@
 # Project 3
+## Name: Fashion Hub UI
 The project is completely designed using HTML and CSS.
 When this project get started to design it were only for my pc friendly but when it get [deployed](https://pajju-dev-fsjs2-project3.netlify.app/) it was like fully responsive.
 
