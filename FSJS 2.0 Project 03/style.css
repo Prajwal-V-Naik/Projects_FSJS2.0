@@ -1,2 +1,284 @@
 /* You can not modify anything from the HTML file */
 /* You can only modify the CSS file */
+:root{
+    --bg-white: #ffffff;
+    --txt-black: #000000;
+    --txt-gray: #9b9b9b;
+}
+*{
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0;
+}
+body{
+    background-color: var(--bg-white);
+    font-family: 'Orbiton',monospace;
+}
+/* navigation bar */
+section[aria-label="navbar"]{
+    padding: 32px 32px;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 64px;
+}
+img[alt="brand-logo"]{
+    width: 130px;
+ }
+.list{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+.list-item{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    color: #504747;
+}
+.list-item:first-child{
+    color: var(--txt-black);
+    text-decoration: underline;
+    font-weight: 700;
+    order: -3;
+}
+.list-item:nth-child(2){
+    order: -1;
+}
+.list-item:nth-child(3){
+    order: -2;
+}
+.button-group{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.button-group svg{
+    width: 70%;
+    position: relative;
+    left: 15px;
+}
+.nav-button{
+    padding: 4px 40px;
+    border-radius: 10px;
+    background-color: var(--bg-white);
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+}
+/* Hero Banner Section */
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 91vh;
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+}
+/* star */
+.star{
+    position: absolute;
+    display: inline-block;
+    right: 10%;
+    top: 25%;
+}
+.star:nth-child(2){
+    top: 75%;
+    left: 10%;
+}
+.star:nth-child(2) img{
+    width: 40px;
+}
+img[alt="start-pattern"]{
+    width: 60px;
+}
+/* globe */
+.globe{
+    position: absolute;
+    display: inline-block;
+    left: 53%;
+    top: 15%;
+}
+img[alt="globe-pattern"]{
+    width: 60px;
+}
+/* hero img */
+img[alt="person-hero-iamge"]{
+    position: absolute;
+    left: 8%;
+    top: 25%;
+    max-width: 40vh;
+    object-fit: cover;
+}
+/* square */
+.square{
+    position: absolute;
+    display: inline-block;
+    top: 38%;
+    left: 10%;
+    z-index: -1;
+}
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding-inline: 32px;
+    width: 60%;
+}
+.hero-heading{
+    font-size: 70px;
+}
+.hero-description{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    max-width: 70vh;
+    color: var(--txt-gray);
+    font-weight: 400;
+}
+.button-email{
+    font-family: "Orbitton",monospace;
+    font-size: 22px;
+    background-color: var(--bg-white);
+    color: var(--txt-gray);
+    padding: 5px 32px;
+    border-radius: 10px;
+}
+.button-join{
+    font-family: "Orbitton",monospace;
+    font-size: 22px;
+    background-color: var(--txt-black);
+    color: var(--bg-white);
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+.contact-heading{
+    font-family: "Poppins",sans-serif;
+    font-size: 19px;
+    color: var(--txt-gray);
+    font-weight: 500;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+.icons span img{
+    width: 35px;
+}
+@media (max-width:1880px) {
+    img[alt="person-hero-iamge"]{
+        max-width: 50vh;
+    }
+    img[alt="square-pattern" ]{
+        max-width: 60vh;
+    }
+    .square{
+        top: 43%;
+        left: 11%;
+    }
+    .star{
+        right: 9%;
+        top: 20%;
+    }
+    .star:nth-child(2){
+        top: 80%;
+        left: 8%;
+    }
+}
+@media (max-width:1024px) {
+    section[aria-label="navbar"]{
+        padding: 28px 25px;
+    }
+    .button-group{
+        display: none;
+    }
+    .star{
+        right: 10%;
+        top: 18%;
+    }
+    .star:nth-child(2){
+        top: 85%;
+        left: 15%;
+    }
+    img[alt="start-pattern"]{
+        width: 45px;
+    }
+    img[alt="globe-pattern"]{
+        width: 45px;
+    }
+    img[alt="person-hero-iamge"]{
+        left: 8%;
+        top: 25%;
+        max-width: 36vh;
+        object-fit: cover;
+    }
+    .square{
+        top: 38%;
+        left: 10%;
+        z-index: -1;
+    }
+    img[alt="square-pattern" ]{
+        max-width: 39vh;
+    }
+}
+@media (max-width:480px){
+    .list{
+        display: none;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        gap: 230px;
+    }
+    .star, .globe{
+        display: none;
+    }
+    img[alt="person-hero-iamge"]{
+        left: 20%;
+        top: 10%;
+        max-width: 25vh;
+        object-fit: cover;
+    }
+    .square{
+        top: 17%;
+        left: 23%;
+        z-index: -1;
+    }
+    img[alt="square-pattern" ]{
+        max-width: 27vh;
+    }
+    .hero-container-right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-heading{
+        font-size: 60px;
+        min-width: 50vh;
+        margin-left: 85%;
+    }
+    .hero-description{
+       display: none;
+    }
+    .button-email{
+        width: 30vh;
+        margin-left: 35%;
+    }
+    .button-join{
+        margin-left: 35%;
+        width: 20vh;
+        margin-left: 50%;
+    }
+    .contact-heading{
+        margin-left: 50%;
+        width: 20vh;
+    }
+    .icons{
+        margin-left: 40%;
+    }
+}
