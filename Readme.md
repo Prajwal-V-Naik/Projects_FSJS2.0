@@ -39,6 +39,13 @@ Since I wasn't familiar with git when I began this project, I lost the time to u
 
 [site-link](https://pajju-dev-fsjs2-project5.netlify.app/)
 
+### Project 6
+#### Name: Law with me
+**UI design, using HTML and CSS, is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2006(HTML%26CSS))
+
+[site-link](https://pajju-dev-fsjs2-project6.netlify.app/)
 ### Project 7
 #### Name: VS-Code website clone
 **UI design, using HTML and TailwindCSS, is what this project is all about**
