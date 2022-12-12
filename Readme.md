@@ -31,6 +31,14 @@ Since I wasn't familiar with git when I began this project, I lost the time to u
 
 [site-link](https://pajju-dev-fsjs2-project4.netlify.app/)
 
+### Project 5
+#### Name: Medifine-Health Care Solution
+**UI design, using HTML and CSS, is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2005(HTML%26CSS))
+
+[site-link](https://pajju-dev-fsjs2-project5.netlify.app/)
+
 ### Project 7
 #### Name: VS-Code website clone
 **UI design, using HTML and TailwindCSS, is what this project is all about**
