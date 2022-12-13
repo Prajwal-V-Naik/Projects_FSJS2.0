@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;900&display=swap');
+/* Global value Use padding: 1rem 5%; this to every main, main-div, or container to make center */
+:root{
+    --bg--black: #151515;
+    --txt--white: #ffffff;
+    --txt--purple: #f737ed;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: var(--bg--black);
+    color: var(--txt--white);
+}
+img[alt="Logo"]{
+    width: 10rem;
+}
+.list{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.list li{
+    list-style: none;
+    font-size: 1rem;
+}
+.left_Nav{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.left_Nav p{
+    font-size: 1rem;
+}
+.left_Nav p::after{
+    content: '\01F893';
+    font-size: 16px;
+    font-weight: 900;
+    position: relative;
+    left: 8px;
+    bottom: -8px;
+}
+.nav_Btn{
+    background: url("./Assets/Icons/btn-pink-bg.svg") no-repeat left;
+    background-position: 0% 50%;
+    background-size: 40%;
+    color: var(--txt--white);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    border: none;
+    padding: 2px 10px;
+}
