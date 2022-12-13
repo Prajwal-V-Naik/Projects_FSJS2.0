@@ -2,6 +2,7 @@
 /* Global value Use padding: 1rem 5%; this to every main, main-div, or container to make center */
 :root{
     --bg--black: #151515;
+    --bg--gray: #292929;
     --txt--white: #ffffff;
     --txt--purple: #f737ed;
     --txt--gray: #8c8d8c;
@@ -33,6 +34,7 @@ nav{
     padding: 1rem 5%;
     background-color: var(--bg--black);
     color: var(--txt--white);
+    width: 100%;
 }
 img[alt="Logo"]{
     width: 10rem;
@@ -161,8 +163,23 @@ img[alt="BackCards"]{
     z-index: 0;
     opacity: 0.6;
 }
-
-
+/* Second container */
+.secondContainer{
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: var(--bg--gray);
+}
+.logos{
+    padding: 3%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+}
+img[alt="Logo2"]{
+    width: 12rem;
+}
 
 
 
@@ -181,7 +198,14 @@ img[alt="BackCards"]{
     .head_description h1{
         width: 80%;
     }
-
+    /* Second container */
+    .logos{
+        padding: 2.5%;
+        gap:4rem;
+    }
+    img[alt="Logo2"]{
+        width: 10rem;
+    }
 
 }
 @media (max-width:1024px) {
@@ -204,7 +228,14 @@ img[alt="BackCards"]{
     .head_description h1 span{
         font-weight: 700;
     }
-
+    /* Second container */
+    .logos{
+        padding: 1%;
+        gap:3rem;
+    }
+    img[alt="Logo2"]{
+        width: 8rem;
+    }
 
 }
 @media (max-width:768px) {
@@ -227,11 +258,30 @@ img[alt="BackCards"]{
     .descriptionBottom{
         margin-top: 0;
     }
+    /* Second container */
+    .logos{
+        padding: 0%;
+        gap:1.3rem;
+    }
+    img[alt="Logo2"]{
+        width: 6rem;
+    }
+
 
 
 }
 @media (max-width:425px) {
     /* Navbar and first container media queries */
+    *{
+        box-sizing: unset;
+    }
+    nav , .firstContainer, .secondContainer{
+        padding: 1rem;
+    }
+    nav{
+        justify-content: center;
+        gap: 4rem;
+    }
     .list{
         display: none;
     }
