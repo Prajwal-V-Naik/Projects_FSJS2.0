@@ -3,6 +3,7 @@
 :root{
     --bg--black: #151515;
     --bg--gray: #292929;
+    --bg--lightPink:#fceffb;
     --txt--white: #ffffff;
     --txt--purple: #f737ed;
     --txt--gray: #8c8d8c;
@@ -180,9 +181,42 @@ img[alt="BackCards"]{
 img[alt="Logo2"]{
     width: 12rem;
 }
-
-
-
+/* Third Container */
+.thirdContainer{
+    padding: 1rem 5%;
+    background-color: var(--bg--lightPink);
+    width: 100%;
+}
+.thirdDescriptions{
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thirdDescriptions h1{
+    text-align: center;
+    width: 60%;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.thirdDescriptions h1 span{
+    margin-top: 1rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.thirdDescriptions p{
+    margin-top: 3rem;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.thirdDescriptions .thirdImage{
+    margin-top: -2.5rem;
+}
+img[alt="VCards"]{
+    width: 100%;
+}
 
 
 
@@ -206,6 +240,16 @@ img[alt="Logo2"]{
     img[alt="Logo2"]{
         width: 10rem;
     }
+    /* third container */
+    .thirdDescriptions h1{
+        width: 70%;
+    }
+    .thirdDescriptions p{
+        width: 60%;
+    }
+
+
+
 
 }
 @media (max-width:1024px) {
@@ -236,6 +280,24 @@ img[alt="Logo2"]{
     img[alt="Logo2"]{
         width: 8rem;
     }
+    /* third container */
+    .thirdDescriptions h1{
+        width: 100%;
+        /* font-size: 4rem; */
+    }
+    .thirdDescriptions p{
+        width: 80%;
+    }
+    .thirdDescriptions .thirdImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img[alt="VCards"]{
+        width: 100%;
+    }
+
+
 
 }
 @media (max-width:768px) {
@@ -266,7 +328,21 @@ img[alt="Logo2"]{
     img[alt="Logo2"]{
         width: 6rem;
     }
-
+    /* third container */
+    .thirdDescriptions{
+        padding: 3% 0;
+    }
+    .thirdDescriptions h1{
+        font-size: 4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .thirdDescriptions h1 span{
+        font-weight: 700;
+    }
+    .thirdDescriptions p{
+        width: 100%;
+    }
 
 
 }
@@ -275,7 +351,7 @@ img[alt="Logo2"]{
     *{
         box-sizing: unset;
     }
-    nav , .firstContainer, .secondContainer{
+    nav , .firstContainer, .secondContainer, .thirdContainer{
         padding: 1rem;
     }
     nav{
@@ -322,5 +398,23 @@ img[alt="Logo2"]{
     .mobile1 div span{
         font-size: 1rem;
     }
-
+    /* third container */
+    .thirdDescriptions h1{
+        font-size: 3rem;
+        font-weight: 500;
+        z-index: 1;
+    }
+    .thirdDescriptions p{
+        font-size: 1.2rem;
+        z-index: 1;
+    }
+}
+@media (max-width:375px) {
+    /* third container */
+    .thirdDescriptions h1{
+        font-size: 2.5rem;
+    }
+    .thirdDescriptions h1 span{
+        font-size: 2.8rem;
+    }
 }
