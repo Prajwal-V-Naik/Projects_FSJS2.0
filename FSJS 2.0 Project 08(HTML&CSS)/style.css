@@ -16,6 +16,7 @@
 }
 body{
     font-family: 'Mulish', sans-serif;
+    background-color: var(--bg--black);
 }
 /* Util means for my sake this all are common classes */
 .flex1{
@@ -382,8 +383,76 @@ img[alt="VCards"]{
     border-radius: 50%;
     background-color: var(--txt--gray);
 }
-
-
+/* Fifth container */
+.fifthContainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img[alt="Back_rect"]{
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+}
+img[alt="Blur_rect"]{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    bottom: 30rem;
+    z-index: 1;
+}
+img[alt="Left_diamond"]{
+    height: 47vh;
+    position: relative;
+    bottom: 58rem;
+    left: 44.5rem;
+    z-index: 2;
+}
+img[alt="Right_diamond"]{
+    height: 47vh;
+    position: relative;
+    bottom: 90rem;
+    right: 45rem;
+    z-index: 2;
+}
+.fifthContainer1 .fifthContainerDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -108rem;
+    z-index: 3;
+}
+.fifthContainer1 .fifthContainerDesc h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--txt--white);
+}
+.fifthContainer1 .fifthContainerDesc h1 span{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--bg--black);
+}
+.bottomContainer{
+    margin-top: 20rem;
+    padding: 1rem 5%;
+}
+.bottomDesc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30rem;
+    color: var(--txt--white);
+}
+.bottomDesc .botList{
+    display: flex;
+    gap: 4rem;
+}
+.bottomDesc .botList li{
+    list-style: none;
+}
 
 @media (max-width: 1440px) {
     /* Navbar and first container media queries */
@@ -424,6 +493,33 @@ img[alt="VCards"]{
     }
     .fourthDescriptions .fourthDescPara{
         width: 55%;
+    }
+    /* fifth Container */
+    img[alt="Blur_rect"]{
+        bottom: 18rem;
+    }
+    img[alt="Left_diamond"]{
+        height: 47vh;
+        bottom: 34rem;
+        left: 36rem;
+    }
+    img[alt="Right_diamond"]{
+        height: 47vh;
+        position: relative;
+        bottom: 53.5rem;
+        right: 36.5rem;
+        z-index: 2;
+    }
+    .fifthContainer1 .fifthContainerDesc{
+        gap: 2rem;
+        margin-top: -65rem;
+    }
+    .bottomContainer{
+        margin-top: 10rem;
+        padding: 1rem 5%;
+    }
+    .bottomDesc{
+        gap: 20rem;
     }
 }
 @media (max-width:1024px) {
@@ -498,8 +594,30 @@ img[alt="VCards"]{
     .fourthDescriptions .fourthDescPara{
         width: 80%;
     }
-
+     /* fifth Container */
+    img[alt="Back_rect"] , img[alt="Blur_rect"] , img[alt="Left_diamond"],img[alt="Right_diamond"]{
+        display: none;
+    }
+    .fifthContainer > .fifthContainer1 > .fifthContainerDesc{
+        margin: 0;
+        color: var(--txt--white);
+        margin-bottom: 4%;
+    }
+    .fifthContainer > .fifthContainer1 > .fifthContainerDesc > h1 {
+        text-align: center;
+    } 
+    .fifthContainer > .fifthContainer1 > .fifthContainerDesc > h1 > span{
+        color: var(--txt--purple);
+    }
+    .bottomContainer{
+        margin-top: 5rem;
+        padding: 1rem 5%;
+    }
+    .bottomDesc{
+        gap: 15rem;
+    }
 }
+
 @media (max-width:768px) {
     /* Navbar and first container media queries */
     .left_Nav p{
@@ -578,6 +696,16 @@ img[alt="VCards"]{
     .gridItem p{
         font-size: 1rem;
     }
+    img[alt="Base_rect"] ,  img[alt="Blur_rect"]{
+        display: none;
+    }
+    .bottomContainer{
+        margin-top: 3rem;
+        padding: 1rem 5%;
+    }
+    .bottomDesc{
+        gap: 3rem;
+    }
 
 }
 @media (max-width:425px) {
@@ -585,7 +713,7 @@ img[alt="VCards"]{
     *{
         box-sizing: unset;
     }
-    nav , .firstContainer, .secondContainer, .thirdContainer , .midContainer, .fourthContainer{
+    nav , .firstContainer, .secondContainer, .thirdContainer , .midContainer, .fourthContainer, .fifthContainer , .bottomContainer{
         padding: 1rem;
     }
     nav{
@@ -675,9 +803,13 @@ img[alt="VCards"]{
     .gridContainer{
         margin-bottom: 3rem;
     }
-
-
-
+    .bottomDesc{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .botList li{
+        display: none;
+    }
 }
 @media (max-width:375px) {
     /* third container */
