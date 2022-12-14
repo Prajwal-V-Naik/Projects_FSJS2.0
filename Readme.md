@@ -53,3 +53,11 @@ Since I wasn't familiar with git when I began this project, I lost the time to u
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2007(Tailwind))
 
 site-link : Copyright
+
+### Project 8
+#### Name: Credit card landing page
+**UI design, using HTML and CSS, is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2008(HTML%26CSS))
+
+[site-link](https://pajju-dev-fsjs2-project8.netlify.app/)
