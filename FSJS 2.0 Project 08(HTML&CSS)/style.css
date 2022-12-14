@@ -7,6 +7,7 @@
     --txt--white: #ffffff;
     --txt--purple: #f737ed;
     --txt--gray: #8c8d8c;
+    --txt--Darkgray: #d1d1d1;
 }
 *{
     box-sizing: border-box;
@@ -181,6 +182,76 @@ img[alt="BackCards"]{
 img[alt="Logo2"]{
     width: 12rem;
 }
+/* LOL actual third container call it mid container */
+.midContainer{
+    padding: 1rem 5%;
+    background-color: var(--bg--black);
+    width: 100%;
+}
+.midContainerFlex{
+    padding: 5% 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+.midDescription{
+    flex-direction: row;
+    align-items: center;
+    color: var(--txt--white);
+}
+.midDescription h1{
+    width: 50%;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.midDescription h1 span{
+    font-size: 5rem;
+    font-weight: 600;
+}
+.midDescription p{
+    width: 40%;
+    font-size: 1.5rem;
+}
+.midCards{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--txt--white);
+}
+.card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border-top:3px groove var(--txt--gray);
+    border-left:3px groove var(--txt--gray);
+    border-bottom: 1px groove var(--txt--gray);
+    border-right:1px groove var(--txt--gray) ;
+    box-shadow: rgba(237, 232, 232, 0.1) 0px 1px 3px 0px, rgba(253, 252, 252, 0.06) 0px 1px 2px 0px;
+    padding: 3rem 2rem;
+    width: 100%;
+    background-color: #272727;
+}
+.card:nth-child(2){
+    padding: 2.18rem;
+    margin-top: -10rem;
+    border-top:3px solid var(--txt--Darkgray);
+    border-left:3px solid var(--txt--Darkgray);
+    border-bottom: 2px solid var(--txt--gray);
+    border-right:2px solid var(--txt--gray) ;
+    background: linear-gradient(90deg,#403c3b,#5b5a5a);
+}
+img[alt="dollar-circle"]{
+    width: 8rem;
+}
+.card p{
+    width: 100%;
+    font-size: 1.5rem;
+}
 /* Third Container */
 .thirdContainer{
     padding: 1rem 5%;
@@ -247,6 +318,10 @@ img[alt="VCards"]{
     .thirdDescriptions p{
         width: 60%;
     }
+    /* midContainer */
+    .midDescription h1{
+        width: 60%;
+    }
 
 
 
@@ -271,6 +346,16 @@ img[alt="VCards"]{
     }
     .head_description h1 span{
         font-weight: 700;
+    }
+    .descriptionBottom{
+        margin-top: 0;
+    }
+    /* midDescription */
+    .midDescription{
+        gap: 1rem;
+    }
+    .midDescription h1, .midDescription h1 span{
+        font-size: 4rem;
     }
     /* Second container */
     .logos{
@@ -343,7 +428,24 @@ img[alt="VCards"]{
     .thirdDescriptions p{
         width: 100%;
     }
-
+    /* midContainer */
+    .midDescription h1, .midDescription h1 span{
+        font-size: 3.5rem;
+    }
+    .midCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 60%;
+        padding: 3rem 2rem;
+    }
+    .card:nth-child(2){
+        margin-top: 0;
+        margin-left: 3rem;
+    }
 
 }
 @media (max-width:425px) {
@@ -351,7 +453,7 @@ img[alt="VCards"]{
     *{
         box-sizing: unset;
     }
-    nav , .firstContainer, .secondContainer, .thirdContainer{
+    nav , .firstContainer, .secondContainer, .thirdContainer , .midContainer{
         padding: 1rem;
     }
     nav{
@@ -408,6 +510,23 @@ img[alt="VCards"]{
         font-size: 1.2rem;
         z-index: 1;
     }
+    .midDescription{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .midDescription h1, .midDescription p{
+        width: 100%;
+    }
+    img[alt="dollar-circle"]{
+        width: 6rem;
+    }
+    .card{
+        width: 50%;
+    }
+    .midContainerFlex{
+        gap: 3rem;
+    }
 }
 @media (max-width:375px) {
     /* third container */
@@ -416,5 +535,11 @@ img[alt="VCards"]{
     }
     .thirdDescriptions h1 span{
         font-size: 2.8rem;
+    }
+    .midDescription h1, .midDescription h1 span{
+        font-size: 3rem;
+    }
+    .midDescription p{
+        font-size: 1.2rem;
     }
 }
