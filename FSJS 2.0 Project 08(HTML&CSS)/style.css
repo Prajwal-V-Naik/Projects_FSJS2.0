@@ -288,7 +288,100 @@ img[alt="dollar-circle"]{
 img[alt="VCards"]{
     width: 100%;
 }
-
+/* Fourth Container */
+.fourthContainer{
+    padding: 1rem 5%;
+    background-color: var(--bg--black);
+    width: 100%;
+}
+.fourthDescriptions{
+    padding: 5% 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: var(--txt--white);
+}
+.fourthDescriptions h1{
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    width: 65%;
+}
+.fourthDescriptions h1 span{
+    font-size: 5rem;
+    font-weight: 600;
+}
+.fourthDescriptions .fourthDescPara{
+    text-align: center;
+    width: 35%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--txt--Darkgray);
+}
+.fourthDescriptions .gridContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60vh;
+    padding: 1rem 2rem;
+    border-top:3px groove var(--txt--gray);
+    border-left:3px groove var(--txt--gray);
+    border-bottom: 1px groove var(--txt--gray);
+    border-right:1px groove var(--txt--gray) ;
+    box-shadow: rgba(237, 232, 232, 0.1) 0px 1px 3px 0px, rgba(253, 252, 252, 0.06) 0px 1px 2px 0px; 
+    background-color: #272727;
+}
+.gridItem:first-child{
+    margin-bottom:2rem;
+    border-top:3px solid var(--txt--Darkgray);
+    border-left:3px solid var(--txt--Darkgray);
+    border-bottom: 2px solid var(--txt--gray);
+    border-right:2px solid var(--txt--gray) ;
+    background: linear-gradient(90deg,#403c3b,#5b5a5a);
+}
+.gridItem p{
+    width: 100%;
+    text-align: left;
+    margin: 1.5rem 0px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.custName p{
+    margin: 0;
+}
+.custName p:nth-child(2){
+    color: var(--txt--gray);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.bottomScrolls{
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.firstScroll{
+    width: 5rem;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: var(--txt--purple);
+    box-shadow: 1px 3px 40px 1px var(--txt--purple);
+}
+.otherScrolls{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--txt--gray);
+}
 
 
 
@@ -322,10 +415,16 @@ img[alt="VCards"]{
     .midDescription h1{
         width: 60%;
     }
-
-
-
-
+    /* Fourth container */
+    .gridItem{
+        width: 90vh;
+    }
+    .fourthDescriptions h1{
+        width: 75%;
+    }
+    .fourthDescriptions .fourthDescPara{
+        width: 55%;
+    }
 }
 @media (max-width:1024px) {
     /* Navbar and first container media queries */
@@ -381,8 +480,24 @@ img[alt="VCards"]{
     img[alt="VCards"]{
         width: 100%;
     }
-
-
+    /* fourth container */
+    .fourthDescriptions .gridContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridItem:first-child{
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+    .otherScrolls{
+        display: none;
+    }
+    .fourthDescriptions h1{
+        width: 100%;
+    }
+    .fourthDescriptions .fourthDescPara{
+        width: 80%;
+    }
 
 }
 @media (max-width:768px) {
@@ -446,6 +561,23 @@ img[alt="VCards"]{
         margin-top: 0;
         margin-left: 3rem;
     }
+    /* fourth Container */
+    .fourthDescriptions h1{
+        font-size: 4rem;
+    }
+    .fourthDescriptions h1 span{
+        font-size: 4.5rem;
+    }
+    .fourthDescriptions .fourthDescPara{
+        width: 90%;
+        font-size: 1.1rem;
+    }
+    .gridItem{
+        width: 80vh;
+    }
+    .gridItem p{
+        font-size: 1rem;
+    }
 
 }
 @media (max-width:425px) {
@@ -453,7 +585,7 @@ img[alt="VCards"]{
     *{
         box-sizing: unset;
     }
-    nav , .firstContainer, .secondContainer, .thirdContainer , .midContainer{
+    nav , .firstContainer, .secondContainer, .thirdContainer , .midContainer, .fourthContainer{
         padding: 1rem;
     }
     nav{
@@ -527,6 +659,25 @@ img[alt="VCards"]{
     .midContainerFlex{
         gap: 3rem;
     }
+     /* fourth Container */
+     .fourthDescriptions h1{
+        font-size: 3.5rem;
+    }
+    .fourthDescriptions h1 span{
+        font-size: 3.5rem;
+    }
+    .gridItem{
+        width: 50vh;
+    }
+    .bottomScrolls{
+        display: none;
+    }
+    .gridContainer{
+        margin-bottom: 3rem;
+    }
+
+
+
 }
 @media (max-width:375px) {
     /* third container */
@@ -541,5 +692,12 @@ img[alt="VCards"]{
     }
     .midDescription p{
         font-size: 1.2rem;
+    }
+     /* fourth Container */
+    .gridItem{
+        width: 44vh;
+    }
+    .gridItem:first-child{
+        margin-left: 14px;
     }
 }
