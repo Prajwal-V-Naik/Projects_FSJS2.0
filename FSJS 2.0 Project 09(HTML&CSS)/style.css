@@ -9,6 +9,7 @@
     --bg--blue:#0c8bfd;
     --txt--white: #ffffff;
     --txt--gray:#616060;
+    --txt--blue:#0c8bfd;
     --bg--spacial:#111010c7;
 }
 body{
@@ -28,6 +29,9 @@ button{
     font-size: 1rem;
 }
 .containerPad{
+    padding: 2rem 5%;
+}
+.navPad{
     padding: 1rem 5%;
 }
 /* Navigation bar */
@@ -53,10 +57,85 @@ button{
     gap: 4rem;
     list-style: none;
 }
+/* First Section */
+.firstSection{
+    display: flex;
+    padding-top: 3rem;
+    gap: 14rem;
+    /* position: relative; */
+}
+.headerPart {
+    width: 50%;
+}
+.headerPart > h1 {
+    text-align: left;
+    font-size: 6rem;
+    color: var(--txt--white);
+    font-weight: 600;
+    word-spacing: 2px;
+}
+.headerPart > h1>span {
+    color: var(--txt--blue);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.headerPart >p {
+    margin-top: 2rem;
+    text-align: left;
+    color: var(--txt--gray);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.headerButtons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.btn1:hover{
+    background-color: var(--bg--spacial); 
+    border: 1px solid var(--txt--white);
+}
+.btn2 {
+   background-color: var(--bg--spacial); 
+   border: 1px solid var(--txt--white);
+}
+.btn2:hover{
+    background-color: var(--bg--blue);
+    border: 1px solid var(--bg--spacial);
+}
+.imagePart{
+    padding-top: 1rem;
+}
+img[alt="firstSectionIMG"]{
+    width: 110%;
+}
 
 
 
 /* Media Queries */
+@media (max-width:1440px) {
+
+    /* First Section */
+    .firstSection{
+        gap: 6rem;
+    }
+    .headerPart{
+        width: 60%;
+    }
+    .headerPart > h1{
+       font-size: 5rem;
+    }
+    .headerPart > p{
+        font-size: 1.5rem;
+    }
+    img[alt="firstSectionIMG"]{
+        width: 100%;
+    }
+}
+
+
 @media (max-width:1024px) {
     /* Universal */
     /* .containerPad{
@@ -77,6 +156,18 @@ button{
         padding: 12px;
         border-radius: 10px;
     }
+    /* First Section */
+    .firstSection{
+        padding-top: 2rem;
+    }
+    .headerPart > h1{
+        font-size: 4rem;
+        word-spacing: normal;
+    }
+    .headerPart > p{
+        font-size: 1.3rem;
+        word-spacing: normal;
+    }
 }
 
 @media (max-width:768px){
@@ -88,6 +179,30 @@ button{
     .navbar,.list{
         gap: 2.5rem;
     }
+    /* First section */
+    .firstSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .headerPart{
+        width: 100%;
+    }
+    .headerPart > h1,.headerPart > p{
+        text-align: center;
+    }
+    .headerPart > h1{
+        font-size: 5rem;
+    }
+    .headerButtons{
+        align-items: center;
+        justify-content: center;
+    }
+    .imagePart{
+        width: auto;
+    }
 }
 
 @media (max-width:736px){
@@ -97,6 +212,13 @@ button{
     }
     .btnNav{
         padding: 10px;
+    }
+    /* First Section */
+    .firstSection{
+        padding-top: 0rem;
+    }
+    .headerPart > h1{
+        font-size: 4.5rem;
     }
 }
 
@@ -120,6 +242,16 @@ button{
     .navbar,.list{
         gap: 1.8rem;
     }
+    /* first Section */
+    .firstSection{
+        margin-top: -1rem;
+    }
+    .headerPart > h1{
+        font-size: 4rem;
+    }
+    .headerPart > p{
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width:480px){
@@ -133,13 +265,31 @@ button{
 }
 
 @media (max-width:414px){
-
+    /* first Section */
+    .headerPart > h1{
+        font-size: 3.5rem;
+    }
+    .btn1,.btn2{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:375px){
-
+    /* nav bar */
+    .btnNav{
+        font-size: 13px;
+    }
 }
 
 @media (max-width:320px){
-
+    /* first Section */
+    .headerPart > h1{
+        font-size: 2.5rem;
+    }
+    .headerPart > p{
+        font-size: 0.9rem;
+    }
+    .btn1,.btn2{
+        font-size: 11px;
+    }
 }
