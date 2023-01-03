@@ -9,9 +9,12 @@
     --bg--blue:#0c8bfd;
     --bg--spacial:#111010c7;
     --bg--darkGray:#1d1c1c;
+    --bg--white:#ffffff;
     --txt--white: #ffffff;
     --txt--gray:#616060;
     --txt--blue:#0c8bfd;
+    --txt--black:#111010;
+    --bdr--gray:#bab9b9;
 }
 body{
     font-family: 'Mulish', sans-serif;
@@ -133,6 +136,80 @@ img[alt="logosSectionIMG"]{
 img[alt="logosSectionIMG"]:hover{
     transform: scale(1.3);
 }
+/* Third Section */
+.thirdSection{
+    padding: 5rem 5%;
+    background-color: var(--bg--white);
+    color: var(--txt--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.thirdHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.thirdHead > h1{
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+.thirdHead > p{
+    margin-top: 1rem;
+    width: 50%;
+    font-size: 1.2rem;
+    color: var(--txt--gray);
+}
+.thirdCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1.4rem;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+    border: 1px solid var(--bdr--gray);
+    width: 15.6%;
+    border-radius: 20px;
+    padding: 1%;
+    padding-bottom: 2%;
+}
+img[alt="cardsImg"]{
+    width: 40%;
+    margin-bottom: 2rem;
+}
+.Card > h3{
+    font-size: 1.2rem;
+}
+.Card > p{
+    font-size: 1rem;
+    color: var(--txt--gray);
+    font-weight: 400;
+}
+.secondCard{
+    background-color: var(--bg--black);
+    color:var(--txt--white);
+    margin-bottom: 4rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.secondCard > p{
+    font-weight: 500;
+}
+
+
+
+
 
 
 /* Media Queries */
@@ -153,6 +230,10 @@ img[alt="logosSectionIMG"]:hover{
     }
     img[alt="firstSectionIMG"]{
         width: 100%;
+    }
+    /* third Section */
+    .Card{
+        width: 20%;
     }
 }
 
@@ -192,6 +273,25 @@ img[alt="logosSectionIMG"]:hover{
     /* Second section */
     img[alt="logosSectionIMG"]{
         width: 8rem;
+    }
+    /* third Section */
+    .thirdHead > h1{
+        font-size: 3.4rem;
+    }
+    .thirdCards{
+        gap: 2.5rem;
+    }
+    .Card{
+        width: 26%;
+    }
+    img[alt="cardsImg"]{
+        width: 30%;
+    }
+    .Card > h3{
+        font-size: 1rem;
+    }
+    .Card > p{
+        font-size: .9rem;
     }
 }
 
@@ -235,6 +335,26 @@ img[alt="logosSectionIMG"]:hover{
     img[alt="logosSectionIMG"]{
         width: 6rem;
     }
+    /* third Section */
+    .thirdSection{
+        padding-top: 3rem;
+    }
+    .thirdHead > h1{
+        font-size: 2.6rem;
+    }
+    .thirdHead > p{
+        font-size: 1rem;
+    }
+    .thirdCards{
+        gap: 1.5rem;
+    }
+    .Card{
+        width: 30%;
+    }
+    img[alt="cardsImg"]{
+        width: 35%;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width:736px){
@@ -263,6 +383,9 @@ img[alt="logosSectionIMG"]:hover{
     .navbar,.list{
         gap: 2rem;
     }
+    .thirdSection{
+        padding-top: 2rem;
+    }
 }
 
 @media (max-width:667px){
@@ -289,6 +412,13 @@ img[alt="logosSectionIMG"]:hover{
         justify-content: center;
         flex-wrap: wrap;
     }
+    /* third Section */
+    .Card > h3{
+        font-size: .8rem;
+    }
+    .Card > p{
+        font-size: .6rem;
+    }
 }
 
 @media (max-width:480px){
@@ -299,6 +429,23 @@ img[alt="logosSectionIMG"]:hover{
     .list{
     display: none;
    }
+   /* third section */
+   .thirdCards{
+    flex-direction: column;
+    gap: 2rem;
+   }
+   .Card{
+    width: 50%;
+   }
+   .Card > h3{
+    font-size: 1rem;
+   }
+   .Card > p{
+    font-size: .9rem;
+   }
+   .secondCard{
+    margin: 0;
+   }
 }
 
 @media (max-width:414px){
@@ -308,6 +455,9 @@ img[alt="logosSectionIMG"]:hover{
     }
     .btn1,.btn2{
         font-size: 14px;
+    }
+    .Card{
+        width: 60%;
     }
 }
 
@@ -328,5 +478,20 @@ img[alt="logosSectionIMG"]:hover{
     }
     .btn1,.btn2{
         font-size: 11px;
+    }
+    .thirdHead > h1{
+        font-size: 2rem;
+    }
+    .thirdHead > p{
+        font-size: .7rem;
+    }
+    .thirdCards{
+        margin-top: 1rem;
+    }
+    .Card > h3{
+        font-size: .8rem;
+    }
+       .Card > p{
+        font-size: .7rem;
     }
 }
