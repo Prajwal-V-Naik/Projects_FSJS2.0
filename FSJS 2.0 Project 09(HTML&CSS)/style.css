@@ -50,6 +50,9 @@ button{
     color: var(--txt--white);
     font-size: 1rem;
 }
+ul{
+    list-style: none;
+}
 /* img[alt="NavLogo"]{
     width: fit-content;
 } */
@@ -291,6 +294,104 @@ img[alt="cardsImg"]{
     border-radius: 30px;
     width: 28vw;
 }
+/* Fourth section */
+
+.fourthSection{
+    padding-top: 4rem;
+    background-color: var(--bg--black);
+    color: var(--txt--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.fourthSectionHead{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.fourthSectionHead > h1{
+    font-size: 3rem;
+    width: 50%;
+    font-weight: 400;
+    text-align: center;
+}
+img[alt="arrows"]{
+    width: 3rem;
+    position: relative;
+    top: 3rem;
+}
+.fourthSectionCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.fourthCard{
+    max-width: 28.1rem;
+    min-width: 12.5rem;
+    width: 17.5rem;
+    max-height: 32rem;
+    min-height: 16rem;
+    height: 31rem;
+    background-color: var(--bg--white);
+    color: var(--txt--black);
+    padding: 1.5rem 1rem;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.fourthCard > h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.fourthCard > h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.fourthCard > h1 > span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--txt--gray);
+}
+.fourthCard > p{
+    font-size: 14px;
+}
+.fourthCard > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.fourthCard > ul > li{
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+.fourthCard > ul > li > img {
+    width: 14px;
+    /* margin-right: 4px; */
+}
+.fourthBlueCard{
+    background-color: var(--bg--blue);
+    color: var(--txt--white);
+}
+.fourthBlueCard > h1 > span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #85c5fe;
+}
+.fourthBlueCard > button{
+    background-color: var(--bg--white);
+    color: var(--txt--blue);
+    font-family: 'Mulish', sans-serif;
+}
 
 
 
@@ -388,6 +489,12 @@ img[alt="cardsImg"]{
     .bottomRight{
         display: none;
     }
+    .fourthSectionHead{
+        gap: 3rem;
+    }
+    .fourthSectionHead > h1{
+        width: 75%;
+    }
 }
 
 @media (max-width:768px){
@@ -453,6 +560,24 @@ img[alt="cardsImg"]{
     .thirdHead2 > h1 {
         font-size: 2rem;
     }
+    /* Fourth section */
+    .fourthSectionHead{
+        gap: 2rem;
+    }
+    .fourthSectionHead > h1{
+        font-size: 2.5rem;
+    }
+    .fourthSectionCards{
+        flex-direction: column;
+    }
+    .fourthCard{
+        max-width: 30rem;
+        min-width: 15rem;
+        width: 20rem;
+        max-height: 32rem;
+        min-height: 16rem;
+        height: 31rem;
+    }
 }
 
 @media (max-width:736px){
@@ -470,6 +595,13 @@ img[alt="cardsImg"]{
     .headerPart > h1{
         font-size: 4.5rem;
     }
+    /* fourth section */
+    .fourthSection{
+        padding-top: 3rem;
+    }
+    .fourthSectionHead{
+        gap: 2rem;
+    }
 }
 
 @media (max-width:684px){
@@ -483,6 +615,16 @@ img[alt="cardsImg"]{
     }
     .thirdSection{
         padding-top: 2rem;
+    }
+    /* Fourth Section */
+    .fourthSectionHead{
+        gap: 1rem;
+    }
+    .fourthSectionHead > h1{
+        font-size: 2rem;
+    }
+    img[alt="arrows"]{
+        width: 2rem;
     }
 }
 
@@ -552,6 +694,10 @@ img[alt="cardsImg"]{
     .bottomLeft > a{
         font-size: 1rem;
     }
+    /* Fourth section */
+    .fourthSection{
+        gap: 4rem;
+    }
 }
 
 @media (max-width:414px){
@@ -565,12 +711,27 @@ img[alt="cardsImg"]{
     .Card{
         width: 60%;
     }
+    /* Fourth container */
+    .fourthSectionHead{
+        gap: .5rem;
+    }
+    .fourthSectionHead > h1{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    img[alt="arrows"]{
+        top: 2rem;
+    }
 }
 
 @media (max-width:375px){
     /* nav bar */
     .btnNav{
         font-size: 13px;
+    }
+    /* Fourth section */
+    img[alt="arrows"]{
+        width: 1.6rem;
     }
 }
 
@@ -600,4 +761,17 @@ img[alt="cardsImg"]{
        .Card > p{
         font-size: .7rem;
     }
+    /* Fourth section */
+    .fourthSectionHead > h1{
+        font-size: 1.2rem;
+    }
+    .fourthCard{
+        max-width: 28.1rem;
+        min-width: 12.5rem;
+        width: 17.5rem;
+        max-height: 32rem;
+        min-height: 16rem;
+        height: 31rem;
+    }
+    
 }
