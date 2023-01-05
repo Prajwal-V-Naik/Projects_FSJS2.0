@@ -297,7 +297,7 @@ img[alt="cardsImg"]{
 /* Fourth section */
 
 .fourthSection{
-    padding-top: 4rem;
+    padding: 4rem 5%;
     background-color: var(--bg--black);
     color: var(--txt--white);
     display: flex;
@@ -392,6 +392,99 @@ img[alt="arrows"]{
     color: var(--txt--blue);
     font-family: 'Mulish', sans-serif;
 }
+/* Fifth section */
+.fifthSection{
+    padding: 4rem 5%;
+    background-color: var(--bg--white);
+    color: var(--txt--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.fifthHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10rem; */
+}
+.fifthHead > h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: left;
+    width: 25%;
+}
+.fifthHead > p{
+    font-size: 1.37rem;
+    font-weight: 500;
+    text-align: left;
+    width: 30%;
+}
+.fifthCardSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.fifthCard{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50rem;
+    min-width: 25rem;
+    width: 32rem;
+    background-color: var(--bg--black);
+    color: var(--txt--white);
+    padding: 2% 1.5%;
+    border-radius: 15px;
+}
+img[alt="Quotation"]{
+    width: 4%;
+}
+.nameCard{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.nameCard > .name{
+    font-size: 1rem;
+}
+.nameCard > .city{
+    font-size: 13px;
+}
+.fifthCard > p {
+    font-size: 1.3rem;
+}
+.stars{
+    display: flex;
+    gap: 10px;
+}
+img[alt="Star"]{
+    width: 1.5rem;
+}
+.SecondCard{
+    background-color: var(--bg--white);
+    color: var(--txt--black);
+    border: 1px solid var(--bdr--gray);
+}
+.Scroll{
+    height: 1%;
+    width: 100%;
+    /* margin-left: 16%; */
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+}
+.scrollBar{
+    height: 6px;
+    width: 10rem;
+    background-color: var(--bg--blue);
+    border-radius: 5px;
+}
 
 
 
@@ -427,6 +520,13 @@ img[alt="arrows"]{
     .bottomLeft > a{
         width: 100%;
         gap: 1rem;
+    }
+    /* Fifth section */
+    .fifthHead > h2,.fifthHead > p{
+        width: 40%;
+    }
+    .fifthCard{
+        width: 35rem;
     }
 }
 
@@ -494,6 +594,20 @@ img[alt="arrows"]{
     }
     .fourthSectionHead > h1{
         width: 75%;
+    }
+    /* Fifth section */
+    .fifthHead > h2{
+        width: 50%;
+        font-size: 3rem;
+    }
+    .fifthHead > p{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    .fifthCard{
+        max-width: 50rem;
+        min-width: 20rem;
+        width: 25rem;
     }
 }
 
@@ -578,6 +692,17 @@ img[alt="arrows"]{
         min-height: 16rem;
         height: 31rem;
     }
+    /* Fifth section */
+    .fifthHead{
+        justify-content: center;
+        gap: 3rem;
+    }
+    .fifthCardSection{
+        flex-direction: column;
+    }
+    .Scroll{
+        display: none;
+    }
 }
 
 @media (max-width:736px){
@@ -601,6 +726,13 @@ img[alt="arrows"]{
     }
     .fourthSectionHead{
         gap: 2rem;
+    }
+    /* Fifth section */
+    .fifthHead > h2{
+        font-size: 2.5rem;
+    }
+    .fifthHead > p{
+        font-size: 1rem;
     }
 }
 
@@ -698,6 +830,30 @@ img[alt="arrows"]{
     .fourthSection{
         gap: 4rem;
     }
+    /* Fifth section */
+    .fifthHead{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .fifthHead > h2{
+        text-align: center;
+        width: 100%;
+    }
+    .fifthHead > p{
+        text-align: center;
+        width: 100%;
+    }
+    .fifthHead > h2 > span{
+        color: var(--txt--blue);
+    }
+    .fifthCard{
+        max-width: 50rem;
+        min-width: 25rem;
+        width: 25rem;
+        padding: 4%;
+    }
 }
 
 @media (max-width:414px){
@@ -722,6 +878,22 @@ img[alt="arrows"]{
     img[alt="arrows"]{
         top: 2rem;
     }
+    /* Fifth Section */
+    .nameCard > .name{
+        font-size: .7rem;
+    }
+    .nameCard > .city{
+        font-size: 9px;
+    }
+    .fifthCard > p {
+        font-size: 1rem;
+    }
+    img[alt="Quotation"]{
+        width: 3%;
+    }
+    img[alt="Star"]{
+        width: 1rem;
+    }
 }
 
 @media (max-width:375px){
@@ -732,6 +904,14 @@ img[alt="arrows"]{
     /* Fourth section */
     img[alt="arrows"]{
         width: 1.6rem;
+    }
+    .fifthCard > p {
+        font-size: 1rem;
+    }
+    .fifthCard{
+        max-width: 20rem;
+        min-width: 0;
+        width: 100%;
     }
 }
 
