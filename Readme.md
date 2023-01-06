@@ -61,3 +61,11 @@ site-link : Copyright
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2008(HTML%26CSS))
 
 [site-link](https://pajju-dev-fsjs2-project8.netlify.app/)
+
+### Project 9
+#### Name: Hosting Site landing page
+**UI design, using HTML and CSS, is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2009(HTML%26CSS))
+
+[site-link](https://pajju-dev-fsjs2-project9.netlify.app/)
