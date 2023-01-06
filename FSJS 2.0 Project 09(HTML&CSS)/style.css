@@ -496,6 +496,7 @@ img[alt="Star"]{
     justify-content: center;
     align-items: center;
     gap:  4rem;
+    padding-bottom: 0;
 }
 .footerSection > h1{
     text-align: center;
@@ -530,7 +531,27 @@ img[alt="Star"]{
     background-color: var(--bg--ltGray);
     padding: 1px;
 }
-
+.footFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15rem;
+    flex-wrap: wrap;
+}
+.Flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Flex > p{
+    font-size: .8rem;
+}
+.Flex > p:first-child{
+    font-size: 1.2rem;
+}
+.footLogo{
+    width: 18%;
+}
 
 
 
@@ -675,6 +696,12 @@ img[alt="Star"]{
     .footButton{
         padding: 1rem 1.2rem;
     }
+    .footFlex{
+        gap: 8rem;
+    }
+    .footLogo{
+        width: 20%;
+    }
 }
 @media (max-width:768px){
     /* Universal */
@@ -782,6 +809,12 @@ img[alt="Star"]{
     }
     .footButton{
         margin-left: 8.5rem;
+    }
+    .footFlex{
+        gap: 5rem;
+    }
+    .footLogo{
+        width: 22%;
     }
 }
 
@@ -939,6 +972,13 @@ img[alt="Star"]{
         font-size: 2rem;
         width: 100%;
     }
+    .footFlex{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .footLogo{
+        width: 28%;
+    }
 }
 
 @media (max-width:414px){
@@ -1009,6 +1049,9 @@ img[alt="Star"]{
     .footerSection > h1{
         font-size: 1.6rem;
     }
+    .footLogo{
+        width: 30%;
+    }
 }
 
 @media (max-width:320px){
@@ -1052,5 +1095,8 @@ img[alt="Star"]{
     /* Footer */
     .footerSection > h1{
         font-size: 1.3rem;
+    }
+    .footFlex{
+        gap: 3rem;
     }
 }
