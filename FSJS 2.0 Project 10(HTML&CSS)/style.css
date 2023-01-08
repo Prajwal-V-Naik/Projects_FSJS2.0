@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --white:#ffffff;
+    --ltWhite:#d9d8d8;
+    --black:#000000;
+    --gray:#4f4b4b;
+    --ltGray:#9e9c9c;
+    --saffron:#f4694c;
+    --ltSaffron:: #ff794f;
+    --babySaffron:#fde1db;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/* Universal */
+.containerPad{
+    padding: 2rem 6rem;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+button{
+    background-color: var(--saffron);
+    color: var(--white);
+    padding: .7rem 2rem;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+}
+/* First section */
+.firstSection{
+    background: url('./Assets/Photos/futuristic-bg.png') no-repeat;
+    background-size: 100% 100%; 
+    color: var(--white);
+}
+.navBar , .logoList{
+    justify-content: space-between;
+    align-items: center;
+}
+.logoList{
+    gap: 10rem;
+}
+.navList{
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.navList > li{
+    font-weight: 400;
+    color: var(--ltWhite);
+}
+.signIn{
+    background-color: transparent;
+}
+.firstSectionContent{
+    margin: 5rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.firstLeft{
+    width: 40%;
+    justify-content: left;
+    gap: 2rem;
+}
+.firstLeft > h1 {
+    font-size: 5rem;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+.firstLeft > p{
+    color: var(--ltWhite);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 60%;
+}
+.leftButtons{
+    gap: 1rem;
+}
+.leftButtons > .leftBtn2{
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+.firstRight{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+img[alt="playButton"]{
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 50%;
+}
+.rightContent{
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+    gap: 1rem;
+}
+img[alt="dash"]{
+    position: relative;
+    bottom: 3rem;
+}
+.rightContent > p{
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+img[alt="rightArrow"]{
+    position: relative;
+    top: 3rem;
+}
+
+
+/* This project only work from 2560px device to till 1200px */
+/* Here are the media queries */
+@media (max-width:1440px) {
+    .firstLeft > h1 {
+        font-size: 3rem;
+    }
+    img[alt="playButton"]{
+        right: 3.5rem;
+    }
+    .rightContent{
+        top: 8rem;
+        left: 6rem;
+    }
+}
+@media (max-width:1024px) {
+    .navBar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .navButtons{
+        gap: 1rem;
+    }
+    .signIn{
+        border: 1px solid var(--white);
+        padding: .65rem 2rem;
+    }
+    .firstLeft{
+        width: 50%;
+    }
+    .firstLeft > p{
+        width: 70%;
+    }
+    .firstRight{
+        width: 40%;
+    }
+    .rightContent{
+        left: 2rem;
+        gap: 1rem;
+    }
+    .rightContent > p{
+        width: 60%;
+    }
+    img[alt="playButton"]{
+        right: 0rem;
+    }
+}
