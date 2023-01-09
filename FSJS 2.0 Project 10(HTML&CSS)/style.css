@@ -15,6 +15,7 @@
 }
 body{
     font-family: 'Oswald', sans-serif;
+    background-color: var(--white);
 }
 /* Universal */
 .containerPad{
@@ -125,6 +126,78 @@ img[alt="dash"]{
 img[alt="rightArrow"]{
     position: relative;
     top: 3rem;
+}
+.secondSection{
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.secondSection > h1{
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.firstBgc{
+    background: url('./Assets/Photos/image\ 2.png') no-repeat;
+    background-size: 100% 100%;
+    width: 25vh;
+    height: 25vh;
+    background-size: cover;
+    background-position: 50%;
+}
+.gameContent{
+    width: 100%;
+    backdrop-filter: blur(20px);
+    background-blend-mode: multiply;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 9rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+.head {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.desc{
+    font-size: 13px;
+    font-weight: 200;
+}
+.gameButton > button{
+    padding: .5rem 1.4rem;
+}
+.secondBgc{
+    background: url('./Assets/Photos/image\ 3.png') no-repeat;
+    background-size: 100% 100%;
+    width: 25vh;
+    height: 25vh;
+    background-size: cover;
+    background-position: 50%;
+}
+.thirdBgc{
+    background: url('./Assets/Photos/image\ 4.png') no-repeat;
+    background-size: 100% 100%;
+    width: 25vh;
+    height: 25vh;
+    background-size: cover;
+    background-position: 50%;
+}
+.fourthBgc{
+    background: url('./Assets/Photos/Rectangle\ 56.png') no-repeat;
+    background-size: 100% 100%;
+    width: 25vh;
+    height: 25vh;
+    background-size: cover;
+    background-position: 50%;
 }
 
 
