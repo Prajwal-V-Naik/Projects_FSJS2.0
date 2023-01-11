@@ -128,11 +128,80 @@ img[alt="rightArrow"]{
     top: 3rem;
 }
 /* Second Section */
+.secondSection {
+    background-color: var(--white);
+    color: var(--black);
+}
+.secondHead {
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 3rem auto;
+}
+.secondCardsDIV {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.secondCard {
+    height: 18rem;
+    width: 18rem;
+    align-items: flex-end;  
+}
+ .secondCardData {
+    padding: 10px 15px ;
+    width: 100%;
+    height: 25%;
+    color: var(--white);
+    backdrop-filter: blur(15px);
+    background-blend-mode: multiply;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .data{
+    align-items: center;
+ }
+ .data h5 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--white);
+ }
+ .data p {
+    font-size: .8rem;
+    font-weight: 200;
+    color: var(--ltWhite);
+ }
+ .cardButton {
+    padding: 10px 15px ;
+ }
+ .card1 {
+    background: url("./Assets/Photos/image 2.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+ }
+ .card2 {
+    background: url("./Assets/Photos/image\ 4.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+ }
+ .card3 {
+    background: url("./Assets/Photos/image 3.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+ }
+ .card4 {
+    background: url("./Assets/Photos/Rectangle\ 56.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+   
+ }
 
 
 /* This project only work from 2560px device to till 1200px */
 /* Here are the media queries */
 @media (max-width:1440px) {
+    /* first Section */
     .firstLeft > h1 {
         font-size: 3rem;
     }
@@ -143,8 +212,13 @@ img[alt="rightArrow"]{
         top: 8rem;
         left: 6rem;
     }
+    /* Second section */
+    .secondHead {
+        font-size: 2.5rem;
+    }
 }
 @media (max-width:1024px) {
+    /* first Section */
     .navBar{
         flex-wrap: wrap;
         justify-content: center;
@@ -175,5 +249,9 @@ img[alt="rightArrow"]{
     }
     img[alt="playButton"]{
         right: 0rem;
+    }
+    /* second section */
+    .secondHead {
+        width: 70%;
     }
 }
