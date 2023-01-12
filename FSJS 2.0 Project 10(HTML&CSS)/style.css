@@ -257,8 +257,44 @@ img[alt="fourthRightArrow"]{
     background-color: var(--saffron);
     width: 2rem;
 }
-
-
+/* Fifth Section */
+.fifthSection{
+    margin: 0 5.5rem;
+}
+.fifthGrids{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 4rem;
+    column-gap: 20% ;
+}
+.grids{
+    gap: 2rem;
+    align-items: center;
+}
+img[alt="gridsPNGs"]{
+    width: 12rem;
+}
+.gridsContent{
+    gap: 1rem;
+}
+.gridsContent > h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 70%;
+}
+.gridSec{
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--saffron);
+}
+.gridDesc{
+    font-size: .8rem;
+    color: var(--gray);
+    width: 70%;
+}
+.gridButton{
+    width: 40%;
+}
 
 /* This project only work from 2560px device to till 1200px */
 /* Here are the media queries */
@@ -313,6 +349,13 @@ img[alt="fourthRightArrow"]{
     img[alt="fourthRightArrow"],img[alt="fourthLeftArrow"]{
         width: 1rem;
     }
+    /* Fifth section */
+    .fifthSection{
+        margin: 0;
+    }
+    .gridsContent > h5 , .gridDesc{
+        width: 100%;
+    }
 }
 @media (max-width:1024px) {
     /* first Section */
@@ -363,6 +406,26 @@ img[alt="fourthRightArrow"]{
         width: 100%;
     }
     .thirdContent{
+        gap: 1rem;
+    }
+    /* fifth section */
+    .fifthGrids{
+        row-gap: 4rem;
+        column-gap: 4rem ;
+    }
+    .gridButton{
+        width: 70%;
+    }
+    .gridsContent > h5{
+        font-size: 1.2rem;
+    }
+    .gridDesc{
+        font-size: .7rem;
+    }
+    .gridSec{
+        font-size: .8rem;
+    }
+    .grids{
         gap: 1rem;
     }
 }
