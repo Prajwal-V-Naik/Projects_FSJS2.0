@@ -158,44 +158,82 @@ img[alt="rightArrow"]{
     background-blend-mode: multiply;
     justify-content: space-between;
     align-items: center;
- }
+}
  .data{
     align-items: center;
- }
+}
  .data h5 {
     font-size: 1.1rem;
     font-weight: 300;
     color: var(--white);
- }
+}
  .data p {
     font-size: .8rem;
     font-weight: 200;
     color: var(--ltWhite);
- }
+}
  .cardButton {
     padding: 10px 15px ;
- }
+}
  .card1 {
     background: url("./Assets/Photos/image 2.png") no-repeat;
     background-size: cover;
     background-position: 50%;
- }
+}
  .card2 {
     background: url("./Assets/Photos/image\ 4.png") no-repeat;
     background-size: cover;
     background-position: 50%;
- }
+}
  .card3 {
     background: url("./Assets/Photos/image 3.png") no-repeat;
     background-size: cover;
     background-position: 50%;
- }
+}
  .card4 {
     background: url("./Assets/Photos/Rectangle\ 56.png") no-repeat;
     background-size: cover;
     background-position: 50%;
    
- }
+}
+.thirdSection{
+    align-items: center;
+    justify-content: left;
+    gap: 5rem;
+    margin: 3rem 5.5rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+img[alt="ThirdIMG"]{
+    width: 40rem;
+    height: 30rem;
+}
+.thirdContent{
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+}
+.thirdContent > h1{
+    font-size: 4rem; 
+}
+.thirdContent > p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--ltGray);
+    width: 50%;
+}
+.thirdButtons {
+    gap: 2rem;
+}
+.thirdbtn1 , .thirdbtn2{
+    padding: 1rem 2.5rem;
+}
+.thirdbtn2{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid var(--saffron);
+    color: var(--saffron);
+}
 
 
 /* This project only work from 2560px device to till 1200px */
@@ -215,6 +253,30 @@ img[alt="rightArrow"]{
     /* Second section */
     .secondHead {
         font-size: 2.5rem;
+    }
+    /* Third section */
+    .thirdSection{
+        gap: 4rem;
+        margin: 2rem 0;
+    }
+    img[alt="ThirdIMG"]{
+        width: 35rem;
+        height: 25rem;
+    }
+    .thirdContent{
+        gap: 1.5rem;
+    }
+    .thirdContent > h1{
+        font-size: 2.5rem; 
+        width: 60%;
+    }
+    .thirdContent > p{
+        font-size: 1rem;
+        width: 60%;
+    }
+    .thirdbtn1 , .thirdbtn2{
+        padding: .8rem 2rem;
+        font-size: 1rem;
     }
 }
 @media (max-width:1024px) {
@@ -253,5 +315,19 @@ img[alt="rightArrow"]{
     /* second section */
     .secondHead {
         width: 70%;
+    }
+    /* Third Section */
+    img[alt="ThirdIMG"]{
+        width: 25rem;
+        height: 20rem;
+    }
+    .thirdContent > h1{ 
+        width: 100%;
+    }
+    .thirdContent > p{
+        width: 100%;
+    }
+    .thirdContent{
+        gap: 1rem;
     }
 }
