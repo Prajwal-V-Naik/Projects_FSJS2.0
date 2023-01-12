@@ -10,7 +10,7 @@
     --gray:#4f4b4b;
     --ltGray:#9e9c9c;
     --saffron:#f4694c;
-    --ltSaffron:: #ff794f;
+    --ltSaffron: #ff794f;
     --babySaffron:#fde1db;
 }
 body{
@@ -234,6 +234,30 @@ img[alt="ThirdIMG"]{
     border: 1px solid var(--saffron);
     color: var(--saffron);
 }
+/*  Fourth Section  */
+.fourthSection{
+    margin: 1.5rem 5.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourthSection > h1{
+    width: 50%;
+    font-size: 4rem;
+}
+.fourthArrows{
+    gap: 1rem;
+}
+img[alt="fourthLeftArrow"]{
+    padding: 1rem;
+    background-color: var(--babySaffron);
+    width: 2rem;
+}
+img[alt="fourthRightArrow"]{
+    padding: 1rem;
+    background-color: var(--saffron);
+    width: 2rem;
+}
+
 
 
 /* This project only work from 2560px device to till 1200px */
@@ -277,6 +301,17 @@ img[alt="ThirdIMG"]{
     .thirdbtn1 , .thirdbtn2{
         padding: .8rem 2rem;
         font-size: 1rem;
+    }
+    /* Fourth Section */
+    .fourthSection{
+        margin: 1.5rem 0;
+    }
+    .fourthSection > h1{
+        width: 50%;
+        font-size: 2.5rem;
+    }
+    img[alt="fourthRightArrow"],img[alt="fourthLeftArrow"]{
+        width: 1rem;
     }
 }
 @media (max-width:1024px) {
