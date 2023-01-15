@@ -17,4 +17,8 @@ _This questions are provided by FSJS2.0 team and solved by me with their support
    
     Answer:- [Link]('./includes.js')
 5) Declare a variable and assign string value to it and then split it into an array using split() method
+    
     Answer:- [Link]('./split1.js')
+6) 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+
+    Answer:- [Link]('./split2.js')
