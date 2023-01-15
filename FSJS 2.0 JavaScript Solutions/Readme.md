@@ -22,3 +22,7 @@ _This questions are provided by FSJS2.0 team and solved by me with their support
 6) 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
     Answer:- [Link]('./split2.js')
+7) Declare an array containing the multiple values and use lastIndexOf to determine the position of the first and last occurrence of a word "pw skills".
+
+
+    Answer:-[link]('./lastIndexOf.js')
