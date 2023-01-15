@@ -11,4 +11,10 @@ _This questions are provided by FSJS2.0 team and solved by me with their support
 
     Answer:-  [Link]('./interploation.js')
 3) Declare a variable and assign string value to it and change all the string characters to capital letters using toUpperCase() method.
+
     Answer:-  [Link]('./toUpperCase.js')
+4) Declare a variable and assign string value to it and check if the string contains a word Script using includes() method.
+   
+    Answer:- [Link]('./includes.js')
+5) Declare a variable and assign string value to it and then split it into an array using split() method
+    Answer:- [Link]('./split1.js')
