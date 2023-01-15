@@ -29,3 +29,8 @@ _This questions are provided by FSJS2.0 team and solved by me with their support
 8) Demonstrate the use of trim() to remove any trailing whitespace at the beginning and the end of a string.
 
     Answer:-[link]('./trim.js')
+9) Boolean value is either true or false.
+    - Write three JavaScript statement example which provide truthy value.
+    - Write three JavaScript statement example which provide falsy value.
+
+    Answer:-[link]('./boolean.js')
