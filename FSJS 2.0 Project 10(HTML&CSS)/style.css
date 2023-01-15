@@ -295,6 +295,119 @@ img[alt="gridsPNGs"]{
 .gridButton{
     width: 40%;
 }
+.sixthSection {
+    text-align: center  ;
+    margin-top: 1vw;
+    background-color: var(--black);
+    padding: 3vw 0px 0vw 1vw;
+}
+.sixthHead {
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 400;
+}
+.sec-5-lower-div {
+    display: flex;
+    gap: 4vw;
+    padding: 2vw 7vw ;
+    padding-bottom: 0px;
+    background-image: url("./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg");
+    background-repeat: no-repeat;
+    background-size: 65vw ;
+    background-position: 100% 33%;
+}
+.sec-5-lower-div>img {
+    min-width: 330px;
+    min-height: 390px;
+    width: 360px;
+    height: 420px;
+}
+.sec-5-lower-right {
+    width: 45vw;
+}
+.sec-5-para {
+    color: rgba(167, 167, 167, 0.822);
+    text-align: left;
+    font-weight: 100;
+    margin: 5vw 0px;
+}
+.sec-5-both-images {
+    display: flex;
+    gap: 3vw;
+    bottom: 0px;
+}
+.img-1-2 {
+    width: 280px;
+    height: 360px;
+}
+.img-22 {
+    height: 250px;
+    align-self: flex-end;
+}
+.sec-5-last-div {
+    padding: 7vw 0px ;
+    padding-bottom: 10vw;
+    margin-top: 10vw;
+    text-align: center;
+    background-image: url("./Assets/Photos/Rectangle\ 606.png");
+    background-color: rgba(0, 0, 0, 0.699);
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.sec-5-last-heading {
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+.sec-5-last-div>p {
+    margin: 1vw 0px;
+    font-weight: 100;
+    color: rgb(151, 151, 151);
+}
+/* Footer */
+footer {
+    display: flex;
+    padding: 5vw 8vw;
+    background-color: rgb(2, 2, 14);
+}
+.footer-logo {
+    width: 24%;
+}
+.footer-ul-div {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo-pic {
+    height: 3.5em;
+}
+.footer-logo>p {
+    color: rgb(126, 126, 126);
+    line-height: 2em;
+    margin: 1vw 0px;
+    font-weight: 100;
+}
+.footer-logo > a {
+    margin-right: 1vw;
+}
+.footer-all-ul {
+    list-style-type: none;
+    line-height: 3vw;
+}
+.footer-list-item {
+    font-size: 14px;
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+}
+.f-list-heading {
+    font-weight: 100;
+    font-size: 16px;
+    color: #d3d3d3;
+}
+
+
+
 
 /* This project only work from 2560px device to till 1200px */
 /* Here are the media queries */
@@ -427,5 +540,12 @@ img[alt="gridsPNGs"]{
     }
     .grids{
         gap: 1rem;
+    }
+    .img-1-2 {
+        width: 240px;
+        height: 320px;
+    }
+    .img-22 {
+        height: 250px;
     }
 }

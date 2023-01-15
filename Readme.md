@@ -69,3 +69,11 @@ site-link : Copyright
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2009(HTML%26CSS))
 
 [site-link](https://pajju-dev-fsjs2-project9.netlify.app/)
+
+### Project 10
+#### Name: Gaming landing page
+**UI design, using HTML and CSS, is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2010(HTML%26CSS))
+
+[site-link](https://pajju-dev-fsjs2-project10.netlify.app/)
