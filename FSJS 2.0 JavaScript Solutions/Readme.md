@@ -26,3 +26,6 @@ _This questions are provided by FSJS2.0 team and solved by me with their support
 
 
     Answer:-[link]('./lastIndexOf.js')
+8) Demonstrate the use of trim() to remove any trailing whitespace at the beginning and the end of a string.
+
+    Answer:-[link]('./trim.js')
