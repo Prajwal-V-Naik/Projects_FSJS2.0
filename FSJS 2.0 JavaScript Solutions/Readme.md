@@ -49,3 +49,22 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
     - Find the length of python and jargon and make a falsy comparison statement.
 
     Answer:- [link]()
+
+11) Use the Date object to do the following activities
+    - What is the year today?
+    - What is the month today as a number?
+    - What is the date today?
+    - What is the day today as a number?
+    - What is the hours now?
+    - What is the minutes now?
+    - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+    
+    Answer:- [link]()
+
+12) Create a human readable time format using the Date time object
+    - YYYY-MM-DD HH:mm
+    - DD-MM-YYYY HH:mm
+    - DD/MM/YYYY HH:mm
+
+    Answer:- [link]()
+    
