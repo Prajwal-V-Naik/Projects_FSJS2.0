@@ -77,3 +77,11 @@ site-link : Copyright
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20Project%2010(HTML%26CSS))
 
 [site-link](https://pajju-dev-fsjs2-project10.netlify.app/)
+
+### Spontaneous Code  
+#### Name: Touch me
+**Funny page, using HTML, CSS, and JavaScript is what this project is all about**
+##### Code-link and output:
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20SpontaneousAsignments/Index.html)
+
+[site-link](https://pajju-dev-touchme.netlify.app/)
