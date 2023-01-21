@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #282a36;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1{
+            font-size: 2.5rem;
+            color: #C85C8E;
+            text-align: center;
+        }
+        span{
+            color: #e7ee98;
+            font-size: 2.7rem;
+        }
+        .box{
+            height: 100vh;
+            background-color: #000;
+            border: 3px solid #2C74B3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .spot{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #C85C8E;
+            background-color: #F7F5EB;
+            position: absolute;
+            z-index: 1;
+            transition:  all 1s;
+            transform: scale(0);
+            /* animation: fadeOut ease 8s; */
+        }
+        /* @keyframes fadeOut {
+        0% {
+            opacity:1;
+        }
+        100% {
+            opacity:0;
+        }
+} */
+    </style>
+    <title>touch ME</title>
+</head>
+<body>
+    
+    <div class="box" id="idBox" onclick="dot()">
+        <h1>Touch <span>WHERE</span> You Want</h1>
+    </div>
+</body>
+<script>
+    function dot(){
+        addEventListener("click" , function(e){
+            let box = document.getElementById('idBox');
+            let spot = document.createElement("div");
+            spot.classList.add('spot');
+            spot.style.top = e.clientY - 22 + "px";
+            spot.style.left = e.clientX - 20 + "px" ;
+            box.appendChild(spot);
+            setTimeout(() =>{
+                box.removeChild(spot);
+            }, 1200)
+            setTimeout(() =>{
+                spot.style.transform = "scale(1.2)";  
+            }, 1)
+        })
+    }
+</script>
+</html>
