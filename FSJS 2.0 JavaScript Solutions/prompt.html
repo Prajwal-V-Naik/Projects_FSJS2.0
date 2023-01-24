@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <title>Find DL</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+    let h1 = document.getElementById('head');
+    let age = prompt("What is your age");
+    if (age >= 18){
+        h1.textContent = "You are old enough to drive";
+        document.body.style.backgroundColor = '#03C988';
+    }
+    else{
+        h1.textContent = "Wait till 18, No urgency!ha";
+        document.body.style.backgroundColor = '#F55050';
+    }
+
+</script>
+</html>
