@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <title>Check Your Garde</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+    let rslt = document.querySelector('#head');
+    // console.log(rslt)
+    let mark = prompt("Enter you percentage%");
+    if(mark >= 80){
+        rslt.textContent = "Your Grade is 'A'";
+        document.body.style.backgroundColor = '#03C988';
+    }
+    else if(mark >= 70){
+        rslt.textContent = "Your Grade is 'B'";document.body.style.backgroundColor = '#9DF1DF';
+    }
+    else if(mark >= 60){
+        rslt.textContent = "Your Grade is 'C'";
+        document.body.style.backgroundColor = '#F5EA5A';
+    }
+    else if(mark >= 50){
+        rslt.textContent = "Your Grade is 'D'";
+        document.body.style.backgroundColor = '#FADA9D';
+    }
+    else{
+        rslt.textContent = "Your Grade is 'F'";
+        document.body.style.backgroundColor = '#FF0032';
+    }
+
+</script>
+</html>

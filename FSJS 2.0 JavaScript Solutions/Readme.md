@@ -75,3 +75,12 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 14) Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript? Create a program which checks that the given number is even or odd.
 
     Answer:- [link]()
+
+15) Write a program which can give grades to students according to theirs scores:
+    - 80-100, A
+    - 70-89, B
+    - 60-69, C
+    - 50-59, D
+    - 0-49, F
+
+    Answer:- [link]()    
