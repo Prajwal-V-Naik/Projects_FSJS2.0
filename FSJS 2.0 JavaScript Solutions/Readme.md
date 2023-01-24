@@ -84,3 +84,11 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
     - 0-49, F
 
     Answer:- [link]()    
+
+16) Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+    - September, October or November, the season is Autumn.
+    - December, January or February, the season is Winter.
+    - March, April or May, the season is Spring
+    - June, July or August, the season is Summer
+
+    Answer:- [link]() 

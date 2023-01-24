@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <title>Find The Seasons</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+     let season = document.querySelector('#head');
+     let month = prompt("Enter the Month name with correct Spell(Only lowercase)");
+     if(month == 'september' || month == 'october' || month == 'november'){
+        season.textContent = 'the season is Autumn';
+        document.body.style.backgroundColor = '#FFF2F2';
+     }
+     else if(month == 'december' || month == 'january' || month == 'february'){
+        season.textContent = 'the season is Winter';
+        document.body.style.backgroundColor = '#E3F6FF';
+     }
+     else if(month == 'march' || month == 'april' || month == 'may'){
+        season.textContent = 'the season is Spring';
+        document.body.style.backgroundColor = '#9DF1DF';
+     }
+     else if(month == 'june' || month == 'july' || month == 'august'){
+        season.textContent = 'the season is Summer';
+        document.body.style.backgroundColor = '#FF8B13';
+     }
+     else{
+        season.textContent = 'Entered month is incorrect or Spelling mistake';
+        document.getElementById('head').style.color = '#FF0032'
+        document.body.style.backgroundImage = "url('./Assets/wrong2.jpeg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundPosition = '19rem 3.5rem';
+        document.body.style.backgroundSize = '22%';
+     }
+</script>
+</html>
