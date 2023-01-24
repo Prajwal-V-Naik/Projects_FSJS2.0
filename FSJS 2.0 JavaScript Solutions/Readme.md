@@ -71,3 +71,7 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 13) Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
 
     Answer:- [link]()
+
+14) Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript? Create a program which checks that the given number is even or odd.
+
+    Answer:- [link]()
