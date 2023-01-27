@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <title>Check Number of days</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+  function daysInMonth(year, month) {
+   let days = new Date(year, month, 0).getDate();
+   document.getElementById('head').innerHTML = "In the year " + year +" of month ( "+ month+" ) I got "+ days +" days";
+}
+
+let enteredYear = prompt("Enter year!");
+let enteredMonth = prompt("Enter Month!");
+daysInMonth(enteredYear , enteredMonth);
+
+</script>
+</html>

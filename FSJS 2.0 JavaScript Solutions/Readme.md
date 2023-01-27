@@ -92,3 +92,24 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
     - June, July or August, the season is Summer
 
     Answer:- [link]() 
+
+17) Write a program which tells the number of days in a month.
+
+    Answer:- [link]() 
+
+18) Write a program which tells the number of days in a month, now consider leap year.
+
+    Answer:- [link]() 
+
+19) Create a countries.js file and store the countries name into this file, create a file web_techs.js and store the popular web technology names into this file. Access both file in a third file named main.js
+
+    Answer:- [link]() 
+
+20) In the following shopping cart add, remove, edit items
+    - const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+    - add 'Meat' in the beginning of your shopping cart if it has not been already added
+    - add Sugar at the end of your shopping cart if it has not been already added
+    - remove 'Honey'
+    - modify Tea to 'Green Tea'
+
+
