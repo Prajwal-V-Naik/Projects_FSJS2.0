@@ -182,3 +182,8 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 
 29) Write a javascript program which takes the input of filename as string and prints the extension of the file in the console.
 
+    Answer:- [link]()
+
+30) Create a simple calculator program in JavaScript which can perform the addition, subtraction, multiplication and division on given numbers.
+
+    Answer:- [link]()
