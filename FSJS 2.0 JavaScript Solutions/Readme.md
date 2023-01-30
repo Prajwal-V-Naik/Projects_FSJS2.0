@@ -6,34 +6,34 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 
 1) Create a variable.js file and declare variables and assign string, boolean, undefined and null data types, Display all the value with their data type.
 
-    Answer:-  [Link]()
+    Answer:-  [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/variable.js)
 2) Declare variables to store your first name, last name, marital status, country and age and display them using interpolation method.
 
-    Answer:-  [Link]()
+    Answer:-  [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/interpolation.js)
 3) Declare a variable and assign string value to it and change all the string characters to capital letters using toUpperCase() method.
 
-    Answer:-  [Link]()
+    Answer:-  [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/toUpperCase.js)
 4) Declare a variable and assign string value to it and check if the string contains a word Script using includes() method.
    
-    Answer:- [Link]()
+    Answer:- [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/includes.js)
 5) Declare a variable and assign string value to it and then split it into an array using split() method
     
-    Answer:- [Link]()
+    Answer:- [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/split1.js)
 6) 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
-    Answer:- [Link]()
+    Answer:- [Link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/split2.js)
 7) Declare an array containing the multiple values and use lastIndexOf to determine the position of the first and last occurrence of a word "pw skills".
 
 
-    Answer:-[link]()
+    Answer:-[link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/lastIndexOf.js)
 8) Demonstrate the use of trim() to remove any trailing whitespace at the beginning and the end of a string.
 
-    Answer:-[link]()
+    Answer:-[link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/trim.js)
 9) Boolean value is either true or false.
     - Write three JavaScript statement example which provide truthy value.
     - Write three JavaScript statement example which provide falsy value.
 
-    Answer:-[link]()
+    Answer:-[link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20JavaScript%20Solutions/boolean.js)
 10) Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
     - 4 > 3
     - 4 >= 3
