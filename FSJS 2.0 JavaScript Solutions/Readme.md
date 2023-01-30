@@ -153,3 +153,5 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 	2 * 3 = 6 and so on till 2 * 10 = 20.
 
     Answer:- [link]()
+
+27) Write a program to print all the prime number between 0 to 100 (0 and 100 included).
