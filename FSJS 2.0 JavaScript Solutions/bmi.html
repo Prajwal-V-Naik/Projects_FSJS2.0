@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+        .sentence{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <title>Check Number of days in leap year</title>
+</head>
+<body>
+    <div class="sentence">
+        <h1 id="head"></h1>
+        <h1 id="sen"></h1>
+    </div>
+</body>
+<script>
+    function BMICalculate(weight,height){
+        const bmi = weight/(height*height);
+        let bmiresult = document.getElementById("head");
+        let result = document.getElementById("sen")
+        
+        bmiresult.textContent = "Your BMI is " + bmi;
+        
+        if (bmi < 18.5) {
+            result.textContent = "Underweight";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            result.textContent = "Normal weight";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            result.textContent = "Overweight";
+        } else if (bmi >= 30) {
+            result.textContent = "Obese";
+        }
+    }
+    let w = prompt("Enter your weight:");
+    let h = prompt("Enter your height:");
+    BMICalculate(w,h);
+</script>
+</html>
