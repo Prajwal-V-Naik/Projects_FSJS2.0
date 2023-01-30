@@ -128,3 +128,7 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
 
     Answer:- [link]()
 
+23) Write a program to check that the number given by the user is a prime number or not.
+
+    Answer:- [link]()
+

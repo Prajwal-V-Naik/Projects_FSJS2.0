@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF2F2;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+    <title>Check Number of days in leap year</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+    let result = document.getElementById("head");
+    let value = prompt("Enter a number(Only Number)");
+    let isPrime = true;
+    if(value == 1){
+        result.textContent = "1 is not a prime number";
+    }
+    else if (value > 1){
+        for(let i = 2; i < value ; i++){
+            if(value % i == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime){
+            result.innerText = value + " is a prime number";
+        }
+        else{
+            result.innerText = value + " is not a prime number";
+
+        }
+    }
+    else{
+        result.innerText = "Entered number is less than 1 so it's not a prime number";
+        
+    }
+</script>
+</html>
