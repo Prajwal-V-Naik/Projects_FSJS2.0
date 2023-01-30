@@ -177,3 +177,8 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
           *
 	     ***
  	    *****
+
+    Answer:- [link]()
+
+29) Write a javascript program which takes the input of filename as string and prints the extension of the file in the console.
+
