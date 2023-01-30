@@ -155,3 +155,25 @@ _This questions are provided by FSJS2.0 team of iNeuron and solved by me with th
     Answer:- [link]()
 
 27) Write a program to print all the prime number between 0 to 100 (0 and 100 included).
+
+    Answer:- [link]()
+
+28) Write a program to print the given patterns using the loops-
+	
+    a) Print a triangle pattern, if the given input is 3 then the pattern should be similar to the given output
+	   
+        *
+	    **
+	    ***
+	
+	b) Print a square pattern, if the input is 3 then the output should be similar to the given output
+	
+        ***
+	    ***
+	    ***
+
+	c) Print a pyramid pattern, if the input is 3 then the output should be similar to the given output
+	    
+          *
+	     ***
+ 	    *****
