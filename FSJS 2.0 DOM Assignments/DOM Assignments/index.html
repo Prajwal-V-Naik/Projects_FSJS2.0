@@ -36,7 +36,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about/about.html">About</a></li>
-          <li><a href="./contact/contact.html">Contact</a></li>
+          <li id="contact"><a href="./contact/contact.html">Contact</a></li>
         </ul>
 
         <!-- Search Area -->
@@ -87,4 +87,18 @@
       </ul>
     </footer>
   </body>
+  <script>
+      let contact = document.getElementById("contact");
+      contact.textContent = 'Projects';
+      let parents = document.querySelector('ul');
+      let list = document.createElement("li");
+      let anchor = document.createElement("a");
+
+      anchor.innerHTML = "Hire me"
+      anchor.setAttribute("href","#");
+
+      list.append(anchor);
+      parents.append(list);
+
+  </script>
 </html>
