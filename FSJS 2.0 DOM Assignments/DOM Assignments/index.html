@@ -41,7 +41,7 @@
 
         <!-- Search Area -->
         <div class="search-field">
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" id="search" />
           <button>Search</button>
         </div>
       </nav>
@@ -88,17 +88,24 @@
     </footer>
   </body>
   <script>
+      // Adding Project to nav bar and hire me
       let contact = document.getElementById("contact");
       contact.textContent = 'Projects';
-      let parents = document.querySelector('ul');
-      let list = document.createElement("li");
-      let anchor = document.createElement("a");
+      // let parents = document.querySelector('ul');
+      // let list = document.createElement("li");
+      // let anchor = document.createElement("a");
 
-      anchor.innerHTML = "Hire me"
-      anchor.setAttribute("href","#");
+      // anchor.innerHTML = "Hire me"
+      // anchor.setAttribute("href","#");
 
-      list.append(anchor);
-      parents.append(list);
+      // list.append(anchor);
+      // parents.append(list);
 
+      // Adding placeholder to search box when projects anchor clicked
+
+      let search = document.getElementById("search")
+      contact.addEventListener("click", () =>{
+          search.setAttribute("placeholder","Search My Project");
+      });
   </script>
 </html>
