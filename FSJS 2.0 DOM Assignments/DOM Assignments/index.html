@@ -55,7 +55,7 @@
         <p>
           I am an aspiring <span>Full Stack JavaScript Developer</span>,
           <br />who is currently working as <span>a Freelancer</span> for <br />
-          <span>National and International Client</span>.
+          <span id="thirdSpan">National and International Client</span>.
         </p>
       </div>
 
@@ -89,8 +89,8 @@
   </body>
   <script>
       // Adding Project to nav bar and hire me
-      let contact = document.getElementById("contact");
-      contact.textContent = 'Projects';
+      // let contact = document.getElementById("contact");
+      // contact.textContent = 'Projects';
       // let parents = document.querySelector('ul');
       // let list = document.createElement("li");
       // let anchor = document.createElement("a");
@@ -103,9 +103,13 @@
 
       // Adding placeholder to search box when projects anchor clicked
 
-      let search = document.getElementById("search")
-      contact.addEventListener("click", () =>{
-          search.setAttribute("placeholder","Search My Project");
-      });
+      // let search = document.getElementById("search")
+      // contact.addEventListener("click", () =>{
+      //     search.setAttribute("placeholder","Search My Project");
+      // });
+
+      // Changing contentText
+      // let thirdSpan = document.getElementById("thirdSpan");
+      // thirdSpan.textContent = "iNeuron Intelligence Pvt Ltd";
   </script>
 </html>
