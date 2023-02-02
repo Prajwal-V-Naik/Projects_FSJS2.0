@@ -61,7 +61,7 @@
 
       <!-- Right Div for Image and Button -->
       <div class="hero-right-section">
-        <img src="./avtar.png" />
+        <img src="./avtar.png"  id="heroImage"/>
 
         <!-- div for putting the button -->
         <div class="hero-right-section-btns">
@@ -111,5 +111,28 @@
       // Changing contentText
       // let thirdSpan = document.getElementById("thirdSpan");
       // thirdSpan.textContent = "iNeuron Intelligence Pvt Ltd";
+
+      // Changing Hero photo
+
+      // Third try,It's happen but not satisfied to ,me
+      // let heroImage = document.getElementById("heroImage");
+      // heroImage.setAttribute("src","https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg")
+
+      // Secondly I tried this also not change anything
+      // let hero = document.querySelectorAll(".hero-right-section");
+      // hero.forEach((e) =>{
+      //   let heroImage = e.nextElementSibling;
+      //   heroImage.setAttribute("src","https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg");
+      // });
+
+      // First I tried this not happen
+      // let heroImage = hero.nextElementSibling;
+      // heroImage.setAttribute("src","https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg");
+
+      // Adding one more button Support Me to right hero section.
+      let rightButton = document.querySelector(".hero-right-section-btns");
+      let anotherButton = document.createElement("button");
+      anotherButton.innerText = "Support Me";
+      rightButton.append(anotherButton);
   </script>
 </html>
