@@ -84,3 +84,55 @@ rightButton.append(anotherButton);
 ```
 
 __<u>My attempt was as follows:</u>__ _To do this task I tried to select the query of class of button section division and just created another element and gave a inner text to that element and just appended to that parent div which I stored in query selector variable._
+
+
+
+# Second Assignments
+
+## <u>Task 1</u>
+__Changing the background of Heading level 3 to "#dadaf8" this.__
+
+### Output image:-
+![FirstTask](../DOM%20Assignments/Second%20Assignment%20Image/task1Output.png)
+
+### Code Snippet:-
+```js
+for (let i = 0; i < accordian.length; i++) {
+  accordian[i].style.backgroundColor = "#dadaf8";
+}
+```
+
+__<u>My attempt was as follows:</u>__ _To do this task I used a stored query selector of heading level three which associated with class accordian named accordian. Then I find there are 4 many items in nodeList of accordian so I just used for loop to iterate one by one and then simply just added style 0f background #dadaf8 to that._
+
+
+## <u>Task 2</u>
+__Adding another division to the accordian-wrapper with same attributes and properties of class with different heading "skills" and a paragraph attached to that heading.__
+
+### Output image:-
+![SecondTask](../DOM%20Assignments/Second%20Assignment%20Image/task2Output.png)
+
+### Code Snippet:-
+```Js
+let accordianWrapper = document.querySelector(".accordian-wrapper");
+let division = document.createElement("div");
+division.setAttribute("class","accordian");
+let skillsHead = document.createElement("h3");
+skillsHead.innerText = "Skills";
+let skillsP = document.createElement("p");
+skillsP.innerText = "I posses a very good command over the full stack development technologies like MERN which can be seen in my work over the Github."
+division.appendChild(skillsHead);
+division.appendChild(skillsP);
+accordianWrapper.append(division);
+
+skillsHead.style.backgroundColor = "#dadaf8";
+
+skillsHead.addEventListener("click", () => {
+  if (skillsP.style.display === "block") {
+    skillsP.style.display = "none";
+  } else {
+    skillsP.style.display = "block";
+  }
+});
+```
+
+__<u>My attempt was as follows:</u>__ _To do this task I made two attempts but not satisfied with that above code snippet. Because It to bigger than my expect, for first try which I get stuck you can go through the about.js file which is commented. Then I tried this to do I know to much long by manually without any short logic._
