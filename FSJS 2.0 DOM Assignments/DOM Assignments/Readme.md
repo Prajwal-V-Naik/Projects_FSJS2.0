@@ -136,3 +136,30 @@ skillsHead.addEventListener("click", () => {
 ```
 
 __<u>My attempt was as follows:</u>__ _To do this task I made two attempts but not satisfied with that above code snippet. Because It to bigger than my expect, for first try which I get stuck you can go through the about.js file which is commented. Then I tried this to do I know to much long by manually without any short logic._
+
+
+# Third Assignments
+
+## <u>Task 1</u>
+__On the contact page, there are two forms, one is User Input Board and the other is User Output Board. When the submit button is clicked, all inputs entered in User Input Board should appear on User Output Board.__
+
+### Output image:-
+![FirstTask](../DOM%20Assignments/Third%20Assignment%20Image/task1Output.png)
+
+```js
+let form1 = document.querySelector(".mainRight");
+let userName = document.querySelector(".userName");
+let enterName = document.querySelector(".enterName")
+let userEmail = document.querySelector(".userEmail");
+let enterMail = document.querySelector(".enterMail");
+let userMessage = document.querySelector(".userMessage");
+let enterMessage = document.querySelector(".enterMessage");
+form1.addEventListener("submit" , function(event){
+  event.preventDefault();
+  enterName.value = userName.value;
+  enterMail.value = userEmail.value;
+  enterMessage.value = userMessage.value;
+});
+```
+__<u>My attempt was as follows:</u>__ _Oh reader I am fresher in dom know but this task made me to learn more about dom, let me explain how I started and problem get solved. For first I used all the methods I know to store a value from input text but it does not worked, then I come to know that I was selecting a wrong query, then I made it correct and add event listener to the submit but it also not worked(got tension here), made all basic trail and errors but no use. Then I asked my best friend(Google) for ["Document"](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener), he gave me some better solutions to complete my work and have done almost every thing by tracking form as event and submit as listener to do my task , then I used .value of every input to pass another form .values which is of User Output Board._
+

@@ -60,16 +60,44 @@
         </form>
       </div>
       
-      <!-- right div for accpeting the user input through the form -->
+      <!-- right div for accepting the user input through the form -->
       <div class="mainRight">
         <h2>User Input Board</h2>
         <form>
           <input class="userName" type="text" placeholder="Enter Your Name" required>
           <input class="userEmail" type="email" placeholder="Enter Your Email" required>
           <textarea class="userMessage" placeholder="Message" required></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </form>
       </div>
     </main>
+    <script>
+      let form1 = document.querySelector(".mainRight");
+      let userName = document.querySelector(".userName");
+      let enterName = document.querySelector(".enterName")
+      let userEmail = document.querySelector(".userEmail");
+      let enterMail = document.querySelector(".enterMail");
+      let userMessage = document.querySelector(".userMessage");
+      let enterMessage = document.querySelector(".enterMessage");
+      form1.addEventListener("submit" , function(event){
+        event.preventDefault();
+        enterName.value = userName.value;
+        enterMail.value = userEmail.value;
+        enterMessage.value = userMessage.value;
+      });
+      
+      // let x = document.getElementById("userName");
+      // x.style.backgroundColor = "red";
+      // let y = document.getElementById("submit");
+      // y.addEventListener("submit", ()=>{
+      //   x.style.backgroundColor = "blue";
+      // });
+      
+      // function submit(){
+      //   // x.style.backgroundColor = "white";
+      //   // console.log(x);
+      //   // console.log(2+2);
+      // }
+    </script>
   </body>
 </html>
