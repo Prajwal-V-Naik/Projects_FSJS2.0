@@ -24,7 +24,7 @@
                 <a href="index.html" class="nav-link"> tags </a>
                 <a href="index.html" class="nav-link"> recipes </a>
             </div>
-            <div>
+            <div class="nav-btns">
                 <a href="index.html" class="btn"> contact </a>
             </div>
         </div>
@@ -98,10 +98,68 @@
             <a href=#>Your Name</a>
         </p>
     </footer>
+    <script>
+        // Creating Another Button Pro Subscription
+        const parent = document.querySelector(".nav-btns");// nav-btns was class which was added by me cuz I didn't find any other way.
+        let subscription = document.createElement("a");
+        subscription.classList.add("btn");
+        subscription.textContent = "Pro Subscription";
+        subscription.href = "index.html";
+        parent.append(subscription);
+        // document.querySelector(".btn").parentElement.appendChild(subscription); // Thing which referred by my friend(google) by using this I can remove first query selector
+
+        // Adding chinese to recipe list
+        let tagsContainer = document.querySelector(".tags-container div")
+        let anchor = document.createElement("a");
+        anchor.innerHTML = "Chinese (7)";
+        anchor.href ="#";
+        tagsContainer.appendChild(anchor);
+
+        // Adding 6th Card to recipe-gallery
+        let recipeGallery = document.querySelector(".recipe-gallery");
+        let division = document.createElement("div");
+        division.classList.add("card");
+
+        let anchor2 = document.createElement("a");
+        anchor2.href = "#";
+        anchor2.classList.add("recipe-text");
+
+        let image1 = document.createElement("img");
+        image1.src = "./img/gobi-65-recipe-500x500.jpg"
+        image1.classList.add("recipe-img")
+        anchor2.append(image1);
+
+        let head5 = document.createElement("h5");
+        head5.classList.add("recipe-name");
+        head5.innerText = "Gobi-65";
+        anchor2.append(head5);
+
+        let para = document.createElement("p");
+        para.classList.add("recipe-disp");
+        para.innerText = "Prep : 10min | Cook : 25min";
+        anchor2.append(para);
+
+        division.append(anchor2);
+        recipeGallery.appendChild(division);
+
+
+        // Changing color of anchor tag in class Card to blue
+        document.querySelectorAll(".recipe-text").forEach((e)=>{e.style.color="#7b66b1"});
+
+        // For Kidding
+        document.querySelector(".footer-logo").nextElementSibling.textContent = "Prajwal";
+        
+    </script>
 </body>
 
 </html>
-
+<!-- <div class="card">
+    <a href="#" class="recipe-text">
+        <img src="./img/recipe-1.jpeg" class="recipe-img" />
+        <h5 class="recipe-name">Chicken</h5>
+        <p class="recipe-disp">Prep : 15min | Cook : 30min</p>
+    </a>
+</div> -->
 
 
 
