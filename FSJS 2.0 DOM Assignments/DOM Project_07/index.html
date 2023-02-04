@@ -71,5 +71,73 @@
         </div>
       </section>
     </div>
+    <script>
+      // As1
+      // Utilities which needed 
+      const mainLanguages = document.querySelector(".main__languages");
+      let languages = document.querySelectorAll(".main__languages a");
+      // storing all languages value 
+      let languagesArray = Array.from(languages);
+      let languagesValue = languagesArray.map(languages => languages.innerHTML);
+      // console.log(languagesValue); 
+      
+      
+      // Actual Assignment one
+      languages.forEach((element)=>{
+          if(element.innerText.includes("2.0")){
+            element.style.display = "none";
+          }      
+        });
+
+      // Assignment 2 
+      document.querySelector(".main__form-input").value = "iNeuron";
+
+      // USing stored languages value to return all values back
+      let submitBtn = document.querySelector(".main__form-btn")
+      submitBtn.disabled = false;
+      submitBtn.addEventListener("click",()=>{
+        mainLanguages.innerHTML = "";
+        const languageList = languagesValue.map(languageValue =>{
+          let a = document.createElement("a");
+          a.innerHTML = language;
+          a.href = "https://www.ineuron.ai";
+          a.target = "_blank";
+          return a;
+        });
+        mainLanguages.append(...languageList);  
+      })
+
+
+// bin
+      // Submit button
+      // let returnLanguages = languages.forEach((e)=>{
+      //   e.innerText;
+      // });
+      // console.log(returnLanguages);
+      // let submitBtn = document.querySelector(".main__form-btn")
+      // submitBtn.disabled = false;
+      // submitBtn.addEventListener("click", (event) => {
+      //   event.preventDefault();
+      // });
+
+
+// bin
+// Assignment - 1: Remove the languages that have 2.0 in their name(Every alternative language)
+      // First try(But I made a minor mistake so I moved towards some other tries then When I found Correct method I moved back)
+      // Second try (Also great and workable)
+      //   for(let deleteElement of languages){
+      //     if(deleteElement.innerText.includes("2.0")){
+      //         deleteElement.style.display = "none";
+      //     }
+      //   }
+
+      // latest try (Also great and workable)
+      // let languages = document.querySelectorAll(".main__languages a");
+      // for(let deleteElement of languages){
+      //   if(deleteElement.innerText.includes("2.0"))
+      //   {deleteElement.style.display = "none"}
+      // }
+      // Assignment - 2: Use JavaScript to write something in the input box and submit the form. This should refresh the page and the languages in the left card should come back.
+    </script>
   </body>
 </html>
