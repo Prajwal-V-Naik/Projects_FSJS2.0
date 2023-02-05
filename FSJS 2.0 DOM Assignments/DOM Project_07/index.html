@@ -73,13 +73,15 @@
     </div>
     <script>
       // As1
+
       // Utilities which needed 
       const mainLanguages = document.querySelector(".main__languages");
       let languages = document.querySelectorAll(".main__languages a");
+
       // storing all languages value 
       let languagesArray = Array.from(languages);
       let languagesValue = languagesArray.map(languages => languages.innerHTML);
-      // console.log(languagesValue); 
+     console.log(languagesValue); 
       
       
       // Actual Assignment one
@@ -96,16 +98,8 @@
       let submitBtn = document.querySelector(".main__form-btn")
       submitBtn.disabled = false;
       submitBtn.addEventListener("click",()=>{
-        mainLanguages.innerHTML = "";
-        const languageList = languagesValue.map(languageValue =>{
-          let a = document.createElement("a");
-          a.innerHTML = language;
-          a.href = "https://www.ineuron.ai";
-          a.target = "_blank";
-          return a;
-        });
-        mainLanguages.append(...languageList);  
-      })
+       
+      });
 
 
 // bin
@@ -119,7 +113,6 @@
       // submitBtn.addEventListener("click", (event) => {
       //   event.preventDefault();
       // });
-
 
 // bin
 // Assignment - 1: Remove the languages that have 2.0 in their name(Every alternative language)
