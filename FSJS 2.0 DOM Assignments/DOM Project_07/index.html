@@ -77,15 +77,8 @@
       // Utilities which needed 
       const mainLanguages = document.querySelector(".main__languages");
       let languages = document.querySelectorAll(".main__languages a");
-
-      // storing all languages value 
-      let languagesArray = Array.from(languages);
-      let languagesValue = languagesArray.map(languages => languages.innerHTML);
-     console.log(languagesValue); 
-      
-      
       // Actual Assignment one
-      languages.forEach((element)=>{
+        languages.forEach((element)=>{
           if(element.innerText.includes("2.0")){
             element.style.display = "none";
           }      
@@ -98,7 +91,9 @@
       let submitBtn = document.querySelector(".main__form-btn")
       submitBtn.disabled = false;
       submitBtn.addEventListener("click",()=>{
-       
+        for (let i = 0; i < languages.length; i++) {
+          languages[i].style.display = "inline-block";
+        }
       });
 
 
@@ -113,7 +108,10 @@
       // submitBtn.addEventListener("click", (event) => {
       //   event.preventDefault();
       // });
-
+      // storing all languages value 
+      //   let languagesArray = Array.from(languages);
+      //   let languagesValue = languagesArray.map(languages => languages.innerHTML);
+      //  console.log(languagesValue); 
 // bin
 // Assignment - 1: Remove the languages that have 2.0 in their name(Every alternative language)
       // First try(But I made a minor mistake so I moved towards some other tries then When I found Correct method I moved back)
