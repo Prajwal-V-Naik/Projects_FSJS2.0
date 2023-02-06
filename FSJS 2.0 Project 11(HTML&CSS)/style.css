@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Light-white : #cdced0;
+    --White: #ffffff;
+    --Purple: #6663e9;
+    --Black: #000000;
+    --Gray: #4c4c4c;
+    --Light-gray: #9b9b9b;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+/* Utilities*/
+.containerPad{
+    padding: 1rem 6rem;
+}
+button{
+    background-color: var(--Purple);
+    color: var(--White);
+    padding: 1.1rem 3rem;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 40px;
+}
+ul{
+    list-style: none;
+}
+
+/* First Section */
+.firstSection{
+    background: url('./Assets/Photos/mainBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+/* >nav part */
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.4rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    /* position: sticky;
+    top: 1px; */
+}
+img[alt="nav-Logo"]{
+    width: 9rem;
+}
+.growList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.growList li{
+    font-size: 1.25rem;
+    color: var(--Light-white);
+}
+.horizontal-line {
+    margin-top: -4rem;
+    border: 1px solid var(--Light-gray);
+}
+/* >Header part */
+.sectionOneHeading{
+    margin: 5rem 0;
+    padding: 1rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.sectionOneHeading h1{
+    font-size: 5rem;
+    color: var(--White);
+    width: 50%;
+    line-height: 1;
+}
+.sectionOneHeading p{
+    font-size: 1.5rem;
+    color: var(--Light-white);
+    width: 30%;
+}
+.logoList{
+    background-color: var(--White);
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 11.5rem;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .firstSection{
+        height: 140vh;
+    }
+    .sectionOneHeading{
+        margin: 3rem 0;
+        padding: 0rem 2.4rem;
+    }
+    .sectionOneHeading h1{
+        width: 70%;
+    }
+    .sectionOneHeading p{
+        width: 40%;
+    }
+    .logoList{
+        margin-top: 3rem; 
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 1024px){
+    .firstSection{
+        height: 110vh;
+    }
+    img[alt="nav-Logo"],img[alt="list-Logos"]{
+        width: 8rem;
+    }
+    .growList{
+        gap: 3rem;
+    }
+    .sectionOneHeading h1{
+        width: 80%;
+        font-size: 4rem;
+    }
+    .sectionOneHeading p{
+        width: 55%;
+        font-size: 1.3rem;
+    }
+    .logoList{
+        margin-top: 0rem; 
+        height: 25vh;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+@media screen and (max-width: 768px){
+    
+}
