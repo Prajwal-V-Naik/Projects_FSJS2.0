@@ -85,3 +85,9 @@ site-link : Copyright
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/blob/main/FSJS%202.0%20SpontaneousAsignments/Index.html)
 
 [site-link](https://pajju-dev-touchme.netlify.app/)
+
+### Dom Projects
+**Some of the best assignments and projects on DOM.**
+
+##### Code-link
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20DOM%20Assignments)
