@@ -36,6 +36,18 @@ ul{
     list-style: none;
 }
 
+
+    /* position: fixed;
+    top: 50%;
+    right: 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000000; */
+
+
 /* First Section */
 .firstSection{
     background: url('./Assets/Photos/mainBackground.png');
@@ -153,5 +165,128 @@ img[alt="nav-Logo"]{
 
 }
 @media screen and (max-width: 768px){
+    .firstSection{
+        height: 85vh;
+    }
+    .navigationBar , .sectionOneHeading {
+        padding: 1rem 0;
+    }
+    .containerPad{
+        padding: 1rem 4rem;
+    }
+    img[alt="nav-Logo"],img[alt="list-Logos"]{
+        width: 7rem;
+    }
+    .growList{
+        gap: 3rem;
+    }
+    .growList li{
+        font-size: 1.1rem;
+    }
+    .sectionOneHeading{
+        margin: 2rem 0;
+        gap: 3rem;
+    }
+    .sectionOneHeading h1{
+        width: 100%;
+    }
+    .sectionOneHeading p{
+        width: 65%;
+    }
+    .logoList{
+        margin-top: 2.5rem;
+    }
+    .logoList :first-child{
+        display: none;
+    }
+}
+@media screen and (max-width: 736px){
+    .firstSection{
+        height: 180vh;
+        gap: 3.7rem;
+    }
+    .sectionOneHeading{
+        margin:  0;
+        gap: 2rem;
+    }
+    .logoList{
+        margin-top: .5rem;
+    }
+}
+@media screen and (max-width: 734px){
+    .firstSection{
+        height: 170vh;
+    }
+}
+@media screen and (max-width: 684px){
+    .containerPad{
+        padding: 1rem 2rem;
+    }
+    .firstSection{
+        height: 160vh;
+        
+    }
+}
+@media screen and (max-width: 667px){
     
+    .firstSection{
+        height: 190vh;
+        gap: 2.3rem;
+    }
+    .navigationBar{
+        padding-bottom: 2.3rem;
+    }
+}
+@media screen and (max-width:480px){
+    .containerPad{
+        padding: 1rem;
+    }
+    button{
+        padding: 1rem 1.8rem;
+        font-size: 1rem;
+    }
+    .firstSection{
+        height: 80vh;
+        gap: 1rem;
+    }
+    img[alt="nav-Logo"],img[alt="list-Logos"]{
+        width: 6rem;
+    }
+    .growList{
+        display: none;
+    }
+    .navigationBar{
+        margin-bottom: 1.2rem;
+    }
+    .sectionOneHeading h1{
+        font-size: 3.3rem;
+    }
+    .sectionOneHeading p{
+        font-size: 1rem;
+    }
+    .logoList{
+        height: 15vh;
+        padding: 3rem 0;
+    }
+    .logoList :nth-child(2){
+        display: none;
+    }
+}
+@media screen and (max-width:414px){
+    .sectionOneHeading h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:375px){
+    .logoList :nth-child(3), .logoList :nth-child(4){
+        display: none;
+    }
+    .firstSection{
+        height: 90vh;
+        gap: 1rem;
+    }
+    .logoList{
+        height: 0;
+        padding: 2.5rem 0;
+    }
 }
