@@ -15,17 +15,18 @@ dropdown.innerHTML = `
 document.body.appendChild(dropdown);
 
 const dropdownList = dropdown.querySelector('ul');
-dropdownList.style.listStyle = 'none';
-dropdownList.style.display = "flex";
-dropdownList.style.flexDirection = "column";
-dropdownList.style.gap="10px";
-dropdownList.style.padding = 0;
-dropdownList.style.position = 'fixed';
-dropdownList.style.top = '42%';
-dropdownList.style.right = '5%';
-dropdownList.style.transform = 'scale(0)';
-dropdownList.style.transformOrigin = 'bottom right';
-dropdownList.style.transition = 'transform 0.3s ease-in-out';
+dropdownList.classList.add('dropdownList');
+// dropdownList.style.listStyle = 'none';
+// dropdownList.style.display = "flex";
+// dropdownList.style.flexDirection = "column";
+// dropdownList.style.gap="10px";
+// dropdownList.style.padding = 0;
+// dropdownList.style.position = 'fixed';
+// dropdownList.style.top = '42%';
+// dropdownList.style.right = '5%';
+// dropdownList.style.transform = 'scale(0)';
+// dropdownList.style.transformOrigin = 'bottom right';
+// dropdownList.style.transition = 'transform 0.3s ease-in-out';
 
 
 const dropdownItems = dropdownList.querySelectorAll('li');

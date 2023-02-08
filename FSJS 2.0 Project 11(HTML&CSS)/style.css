@@ -53,6 +53,18 @@ ul{
 a{
     text-decoration: none;
 }
+.dropdownList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    position: fixed;
+    top: 42%;
+    right: 6%;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out; 
+}
 
 /* First Section */
 .firstSection{
@@ -124,6 +136,8 @@ img[alt="nav-Logo"]{
     align-items: center;
 }
 
+
+
 /* Media Queries */
 @media screen and (max-width: 1440px) {
     .firstSection{
@@ -142,6 +156,9 @@ img[alt="nav-Logo"]{
     .logoList{
         margin-top: 3rem; 
         height: 25vh;
+    }
+    .dropdownList{
+        top: 40%;
     }
 }
 @media screen and (max-width: 1024px){
@@ -167,6 +184,10 @@ img[alt="nav-Logo"]{
         height: 25vh;
         justify-content: center;
         gap: 2rem;
+    }
+    .dropdownList{
+        top: 38%;
+        right: 8%;
     }
 
 }
@@ -205,6 +226,10 @@ img[alt="nav-Logo"]{
     .logoList :first-child{
         display: none;
     }
+    .dropdownList{
+        top: 41%;
+        right: 10%;
+    }
 }
 @media screen and (max-width: 736px){
     .firstSection{
@@ -218,10 +243,18 @@ img[alt="nav-Logo"]{
     .logoList{
         margin-top: .5rem;
     }
+    .dropdownList{
+        top: 27%;
+        right: 10%;
+    }
 }
 @media screen and (max-width: 734px){
     .firstSection{
         height: 170vh;
+    }
+    .dropdownList{
+        top: 28%;
+        right: 10%;
     }
 }
 @media screen and (max-width: 684px){
@@ -241,6 +274,10 @@ img[alt="nav-Logo"]{
     }
     .navigationBar{
         padding-bottom: 2.3rem;
+    }
+    .dropdownList{
+        top: 24%;
+        right: 10%;
     }
 }
 @media screen and (max-width:480px){
@@ -277,10 +314,18 @@ img[alt="nav-Logo"]{
     .logoList :nth-child(2){
         display: none;
     }
+    .dropdownList{
+        top: 40%;
+        right: 14%;
+    }
 }
 @media screen and (max-width:414px){
     .sectionOneHeading h1{
         font-size: 3rem;
+    }
+    .dropdownList{
+        top: 38%;
+        right: 16%;
     }
 }
 @media screen and (max-width:375px){
@@ -294,5 +339,9 @@ img[alt="nav-Logo"]{
     .logoList{
         height: 0;
         padding: 2.5rem 0;
+    }
+    .dropdownList{
+        top: 37%;
+        right: 16%;
     }
 }
