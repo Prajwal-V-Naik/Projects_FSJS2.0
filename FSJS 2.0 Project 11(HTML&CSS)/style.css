@@ -135,13 +135,143 @@ img[alt="nav-Logo"]{
     justify-content: space-around;
     align-items: center;
 }
+/* Second Section */
+.secondSection {
+    padding: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* >Heading Part */
+.sectionTwoHeading {
+    font-size: 4rem;
+    color: var(--Black);
+}
+/* >Section Two all cards */
+.sectionTwoCards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10rem;
+    column-gap: 4rem;
+    margin: 5rem 0rem 4rem 0rem;
+}
+.allCards {
+    height: 26rem;           
+    width: 25rem;            
+    background-image: url("./Assets/Photos/cardImage1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    border-radius: 25px;
+    position: relative;
+}
+.allCards:nth-child(2) {
+    background-image: url("./Assets/Photos/cardImage2.png");
+    background-size: 180%;
+    background-position: 10%;
+}
+.allCards:nth-child(3) {
+    background-image: url("./Assets/Photos/cardImage3.png");
+    background-size: 220%;
+    background-position: 45%;
+}
+.allCards:nth-child(4) {
+    background-image: url("./Assets/Photos/cardImage4.png");
+    background-size: 200%;
+    background-position: 49%;
+}
+.allCards:nth-child(5) {
+    background-image: url("./Assets/Photos/cardImage5.png");
+    background-size: 200%;
+    background-position: 45%;
+}
+.allCards:nth-child(6) {
+    background-image: url("./Assets/Photos/cardImage6.png");
+    background-size: 200%;
+    background-position: 48%;
+}
+.allCards:nth-child(7) {
+    background-image: url("./Assets/Photos/cardImage7.png");
+    background-size: 200%;
+    background-position: 48%;
+}
+.allCards:nth-child(8) {
+    background-image: url("./Assets/Photos/cardImage8.png");
+    background-size: 112%;
+    background-position: 45%;
+}
+.allCards:nth-child(9) {
+    background-image: url("./Assets/Photos/cardImage9.png");
+    background-size: 200%;
+    background-position: 70%;
+}
+.allCards:hover{
+    border: 4px solid #6764e7;
+    animation: flow 10s linear infinite;
+}
+@keyframes flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.cardData {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Black);
+    background-color: var(--White);
+    padding: 1.2rem;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    bottom: -14%;
+    left: 5%;
+    border-radius: 20px;
+}
+.cardData p {
+    text-align: left;
+}
+.cardData span {
+    font-size: 1.2rem;
+    color: var(--Purple);
+}
+.cardData button {
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 1.8rem;
+    background-color: var(--Purple);
+    border-radius: 25px;
+}
+.up {
+    position: relative;
+    top: -5%;
+}
+.low {
+    position: relative;
+    top: 5%;
+}
 
 
 
 /* Media Queries */
 @media screen and (max-width: 1440px) {
     .firstSection{
-        height: 140vh;
+        height: 103vh;
     }
     .sectionOneHeading{
         margin: 3rem 0;
@@ -159,6 +289,10 @@ img[alt="nav-Logo"]{
     }
     .dropdownList{
         top: 40%;
+    }
+    .allCards{
+        height: 25rem;           
+        width: 24rem; 
     }
 }
 @media screen and (max-width: 1024px){
@@ -189,7 +323,18 @@ img[alt="nav-Logo"]{
         top: 38%;
         right: 8%;
     }
-
+    .sectionTwoCards{
+    grid-template-columns: auto auto;
+    }
+    .up {
+        top: 0%;
+    }
+    .low {
+        top: 0%;
+    }
+    .sectionTwoHeading{
+        font-size: 4rem;
+    }
 }
 @media screen and (max-width: 768px){
     .firstSection{
@@ -230,6 +375,16 @@ img[alt="nav-Logo"]{
         top: 41%;
         right: 10%;
     }
+    .allCards{
+        height: 22rem;           
+        width: 21rem; 
+    }
+    .secondSection{
+        margin: 5rem 0;
+    }
+    .sectionTwoCards{
+        column-gap: 3rem;
+    }
 }
 @media screen and (max-width: 736px){
     .firstSection{
@@ -246,6 +401,10 @@ img[alt="nav-Logo"]{
     .dropdownList{
         top: 27%;
         right: 10%;
+    }
+    .sectionTwoCards{
+        column-gap: 2.5rem;
+        row-gap: 8rem;
     }
 }
 @media screen and (max-width: 734px){
@@ -265,6 +424,15 @@ img[alt="nav-Logo"]{
         height: 160vh;
         
     }
+    .sectionTwoCards{
+        row-gap: 7rem;
+        column-gap: 2rem;
+
+    }
+    .allCards{
+        height: 21rem;           
+        width: 20rem; 
+    }
 }
 @media screen and (max-width: 667px){
     
@@ -278,6 +446,13 @@ img[alt="nav-Logo"]{
     .dropdownList{
         top: 24%;
         right: 10%;
+    }
+    .sectionTwoCards{
+        grid-template-columns: auto;
+    }
+    .allCards{
+        height: 23rem;           
+        width: 22rem;
     }
 }
 @media screen and (max-width:480px){
@@ -318,6 +493,9 @@ img[alt="nav-Logo"]{
         top: 40%;
         right: 14%;
     }
+    .sectionTwoHeading{
+        font-size: 3.3rem;
+    }
 }
 @media screen and (max-width:414px){
     .sectionOneHeading h1{
@@ -326,6 +504,9 @@ img[alt="nav-Logo"]{
     .dropdownList{
         top: 38%;
         right: 16%;
+    }
+    .sectionTwoHeading{
+        font-size: 3rem;
     }
 }
 @media screen and (max-width:375px){
