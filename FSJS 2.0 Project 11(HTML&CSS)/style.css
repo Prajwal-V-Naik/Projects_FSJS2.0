@@ -167,6 +167,7 @@ img[alt="nav-Logo"]{
     background-size: 200%;
     border-radius: 25px;
     position: relative;
+    z-index: -1;
 }
 .allCards:nth-child(2) {
     background-image: url("./Assets/Photos/cardImage2.png");
