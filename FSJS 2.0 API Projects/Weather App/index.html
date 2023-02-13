@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="./Assets/WeatherLogo.png">
     <title>Web-Weather</title>
 </head>
 <body>
+    <!-- A Full web page -->
     <div class="container">
+        <!-- Top part where time location -->
         <div class="top">
-            <h1></h1>
+            <div class="topTimeIn">
+                <div>
+                    <h1 class="timeHead" id="time"></h1>
+                    <span class="aM-pM" id="aMpM"></span>
+                </div>
+                <h2 class="locationHead" id="topLocation"><ion-icon name="location-outline" class="icon"></ion-icon>Bengaluru</h2>
+            </div>
+            <img src="./Assets/WeatherLogo.png" alt="LOGO">
+        </div>
+        <!-- Bottom where weather information displayed -->
+        <div class="bottom">
+            <!-- left division -->
+            <div class="bottomLeft">
+                <!-- Weather grids -->
+                <div class="weatherCard"></div>
+                <div class="WeatherImageCard"></div>
+                <div class="humidityCard"></div>
+                <div class="windSpeedCard"></div>
+            </div>
+            <!-- right division -->
+            <div class="bottomRight">
+                <!-- forecast flex -->
+                <div class="forecastDiv">
+
+                </div>
+                <div class="thinkIt">
+
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Copyrights -->
+    <footer>
+        <p>Copyrights</p>
+    </footer>
 </body>
+<script src="./script.js"></script>
 </html>
