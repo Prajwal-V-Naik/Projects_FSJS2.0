@@ -16,11 +16,14 @@
         <!-- Top part where time location -->
         <div class="top">
             <div class="topTimeIn">
-                <div>
+                <div class="timeDisplay">
                     <h1 class="timeHead" id="time"></h1>
                     <span class="aM-pM" id="aMpM"></span>
                 </div>
-                <h2 class="locationHead" id="topLocation"><ion-icon name="location-outline" class="icon"></ion-icon>Bengaluru</h2>
+                <div class="locationDisplay">
+                    <ion-icon name="location-outline" class="icon"></ion-icon>
+                    <h2 class="locationHead" id="topLocation"></h2>
+                </div>
             </div>
             <img src="./Assets/WeatherLogo.png" alt="LOGO">
         </div>
@@ -64,7 +67,10 @@
                           </form>
                     </div>
                     <div class="latestSearch">
-                        <p id="searchList">hhh</p>
+                        <h5>latest search <span>History</span></h5>
+                        <div id="latestSearch">
+                    
+                        </div>
                     </div>
                 </div>
                 <!-- forecast flex -->

@@ -45,7 +45,7 @@ body{
     justify-content: center;
     color: var(--white);
 }
-.topTimeIn div{
+.timeDisplay , .locationDisplay{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,6 +68,7 @@ body{
 .locationHead{
     font-size: 2.5rem;
     font-weight: 400;
+    text-transform: capitalize;
 }
 img[alt="LOGO"]{
     width: 16rem;
@@ -120,18 +121,19 @@ img[alt="LOGO"]{
     font-weight: 300;
 }
 .WeatherImageCard{
-    background: url("./Assets/download.png");
+ background-color: #91b5fc;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    gap: 2.5rem;
 }
 .weatherRegion{
     font-size: 3rem;
     text-align: center;
     width: 90%;
+}
+img[alt="weatherIcon"]{
+    width: 10rem;
 }
 .humidityCard{
     background-color: #6194fa;
@@ -199,6 +201,7 @@ img[alt="LOGO"]{
     font-size: 22px;
 }
 .searchData button{
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
     padding: 8px 12px;
     margin-left: 5px;
@@ -206,6 +209,28 @@ img[alt="LOGO"]{
     border: none;
     border-radius: 7px;
     color: var(--white);
+}
+.latestSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latestSearch h5{
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.latestSearch h5 span{
+    font-size: 1.4rem;
+}
+.searchHistory{
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-bottom: 1px solid #000000;
+    background-color: #E9F8F9;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 
