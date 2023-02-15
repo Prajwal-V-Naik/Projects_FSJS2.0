@@ -29,20 +29,49 @@
             <!-- left division -->
             <div class="bottomLeft">
                 <!-- Weather grids -->
-                <div class="weatherCard"></div>
-                <div class="WeatherImageCard"></div>
-                <div class="humidityCard"></div>
-                <div class="windSpeedCard"></div>
+                <div class="weatherCard card">
+                    <h3>Weather</h3>
+                    <h1><span id="celsius"></span>&#8451;</h1>
+                    <h4>celsius</h4>
+                    <h2><span id="fahrenheit"></span>&#8457;</h4>
+                    <h4>fahrenheit</h4>
+                </div>
+                <div class="WeatherImageCard card">
+                    <p class="weatherRegion" id="weather-region">Region</p>
+                    <img src="" alt="weatherIcon" id="weather-icon">
+                </div>
+                <div class="humidityCard card">
+                    <h3>Humidity</h3>
+                    <h2><span id="humidity">80</span>%</h2>
+                </div>
+                <div class="windSpeedCard card">
+                    <h3>Wind Speed</h3>
+                    <h2><span id="wind">80</span>km/h</h2>
+
+                </div>
             </div>
             <!-- right division -->
             <div class="bottomRight">
+               
+                <div class="search longCard">
+                    <div class="searchhead">
+                        <h4>Enter Location</h4>
+                    </div>
+                    <div class="searchEngine">
+                        <form onsubmit="getData(event)" class="searchData">
+                            <input id="inputBox" type="text" placeholder="Enter the city name" />
+                            <button>Search</button>
+                          </form>
+                    </div>
+                    <div class="latestSearch">
+                        <p id="searchList">hhh</p>
+                    </div>
+                </div>
                 <!-- forecast flex -->
-                <div class="forecastDiv">
-
+                <div class="forecastDiv longCard">
+                    forecast
                 </div>
-                <div class="thinkIt">
-
-                </div>
+                
             </div>
         </div>
     </div>
