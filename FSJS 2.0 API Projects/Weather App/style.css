@@ -6,13 +6,15 @@
 }
 :root{
     --white: #ffffff;
-    --light-Blue: #37b7ff;
+    --light-Blue: #38b6ff;
     --black: #000000;
+    --dark-Blue: #00508f;
+    --gray: #758c94;
+
 }
 body{
     font-family: 'Roboto Slab', serif;
     /* height: 100vh; */
-    background-image: linear-gradient(to right bottom, #20262e, #252e43, #333457, #493867, #663872, #804479, #985180, #af5f86, #c28198, #d2a3ad, #dfc5c8, #e9e8e8);
     padding: 0 4rem;
     padding-top: .5rem;
 
@@ -21,12 +23,11 @@ body{
     /* border: solid; */
     border-radius: 30px 30px 0  0 ;
     /* height: 95vh; */
-    background: transparent;
+    background-color: var(--light-Blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 1rem;
 }
 .top{
     background: url("./Assets/weatherBack.jpg");
@@ -80,6 +81,9 @@ img[alt="LOGO"]{
 .bottom{
     display: flex;
     flex-direction: row;
+    background-color: var(--dark-Blue);
+    padding: 1rem 0;
+
     /* gap: 1rem; */
     /* width: 100%; */
 }
@@ -96,7 +100,7 @@ img[alt="LOGO"]{
     height: 18rem;
     width: 18rem;
     border-radius: 30px;
-    background: #ffffff;
+    background-color: var(--gray);
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .weatherCard{
@@ -121,22 +125,27 @@ img[alt="LOGO"]{
     font-weight: 300;
 }
 .WeatherImageCard{
- background-color: #91b5fc;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .weatherRegion{
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
     width: 90%;
+    text-transform: capitalize;
+}
+.description{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
 img[alt="weatherIcon"]{
     width: 10rem;
 }
 .humidityCard{
-    background-color: #6194fa;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -152,7 +161,6 @@ img[alt="weatherIcon"]{
     font-weight: 500;
 }
 .windSpeedCard{
-    background-color: #b0c1e4;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -175,10 +183,11 @@ img[alt="weatherIcon"]{
     justify-content: center;
 }
 .longCard{
+    background-color: var(--light-Blue);
     width: 22rem;
     height: 38rem;
+    padding-top: 1rem;
     border-radius: 30px;
-    background: #ffffff;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 
 }
@@ -199,6 +208,11 @@ img[alt="weatherIcon"]{
 }
 .searchData input{
     font-size: 22px;
+    border: none;
+    border-radius: 7px;
+}
+.searchData input:focus {
+    outline: none;
 }
 .searchData button{
     font-family: 'Roboto Slab', serif;
@@ -232,7 +246,22 @@ img[alt="weatherIcon"]{
     cursor: pointer;
     margin-bottom: 10px;
 }
-
+.forecastDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.forecastDiv h4{
+    font-size: 2rem;
+    text-decoration: dashed underline var(--dark-Blue);
+}
+.daysForecast{
+    display: flex;
+}
+.daysForecast p{
+    display: flex;
+}
 
 
 
@@ -363,6 +392,10 @@ img[alt="weatherIcon"]{
         grid-template-columns: auto;
         row-gap: 2rem;
     }
+    .longCard{
+        width: 20rem;
+        height: 28rem;
+    } 
     .forecastDiv{
         display: none;
     }
