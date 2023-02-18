@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +9,11 @@
     --light-Blue: #38b6ff;
     --black: #000000;
     --dark-Blue: #00508f;
-    --gray: #758c94;
+    --gray: #595959;
 
 }
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0 4rem;
     padding-top: .5rem;
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(29,23,23,1) 50%, rgb(0, 0, 0) 100%);
@@ -101,7 +101,8 @@ img[alt="LOGO"]{
     width: 18rem;
     border-radius: 30px;
     /* background-color: var(--gray); */
-    box-shadow: rgba(255, 255, 255, 0.534) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border: 2px solid var(--gray);
+    /* box-shadow: rgba(255, 255, 255, 0.534) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
 }
 .weatherCard{
     display: flex;
@@ -117,7 +118,7 @@ img[alt="LOGO"]{
     font-weight: 300;
 }
 .weatherCard  h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .weatherCard  h4{
@@ -158,7 +159,7 @@ img[alt="weatherIcon"]{
     font-weight: 300;
 }
 .humidityCard h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .windSpeedCard{
@@ -173,7 +174,7 @@ img[alt="weatherIcon"]{
     font-weight: 300;
 }
 .windSpeedCard h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .bottomRight{
@@ -189,8 +190,8 @@ img[alt="weatherIcon"]{
     height: 38rem;
     padding-top: 1rem;
     border-radius: 30px;
-    box-shadow: rgba(250, 250, 250, 0.518) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-
+    /* box-shadow: rgba(250, 250, 250, 0.518) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
+    border: 2px solid var(--gray);
 }
 .search{
     display: flex;
@@ -216,7 +217,7 @@ img[alt="weatherIcon"]{
     outline: none;
 }
 .searchData button{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 8px 12px;
     margin-left: 5px;
