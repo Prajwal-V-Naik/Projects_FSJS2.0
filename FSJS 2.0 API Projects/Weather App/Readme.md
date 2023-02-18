@@ -1,12 +1,8 @@
 Hello all😍!
 
-
-
 here is my new weather app using API from weatherapi 
 
 This was build with complete using of HTML, CSS, JavaScript and API fetching method.
-
-
 
 Specialties in this site:
 
@@ -25,5 +21,10 @@ Specialties in this site:
 7) Also A specially build Logo is existed for this site, the logo was build personally by me.
 
 
-
 You can go through the links and also watch the code and help me to fix my mistakes
+
+live-link🚀: https://pajju-dev-climateapp.netlify.app/
+
+git-link 🕵‍♂️ : https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20API%20Projects/Weather%20App
+
+![img](./Assets/WeatherLogo.png)
