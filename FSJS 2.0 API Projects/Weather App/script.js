@@ -115,7 +115,7 @@ const fetchForecast = await fetch(
 const orgForecast = await fetchForecast.json();
 foreData = orgForecast;
 const forecastData = foreData.forecast.forecastday[0];
-console.log(forecastData);
+// console.log(forecastData);
 const hourlyData = forecastData.hour;
 
 hourlyData.forEach(hour => {
