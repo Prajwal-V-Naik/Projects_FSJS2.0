@@ -121,21 +121,45 @@ const hourlyData = forecastData.hour;
 hourlyData.forEach(hour => {
   const time = hour.time.slice(11, 16);
   const temp = hour.temp_c;
-  const des = hour.condition.text;
-  const div = document.createElement('div');
-  div.style.display = 'flex';
-  div.style.flexDirection = 'row';
-  div.style.gap = '5px'
+  const des = hour.condition.icon;
+  daysForecast.style.display = 'grid';
+  daysForecast.style.gridTemplateColumns = 'auto auto auto auto';
+  daysForecast.style.columnGap = '1rem';
+  daysForecast.style.rowGap = '10px';
+  const smallDiv = document.createElement('div');
+  smallDiv.style.border = '1px solid var(--gray)';
+  smallDiv.style.borderRadius = '6px'
+  smallDiv.style.display= 'flex';
+  smallDiv.style.flexDirection = 'column';
+  // smallDiv.style.gap = '5px';
+  smallDiv.style.alignItems = 'center';
+  smallDiv.style.justifyContent = 'center';
+  smallDiv.style.padding='6px';
   const timeP = document.createElement('p');
-  timeP.innerText = `On-${time}`;
+  timeP.innerText = time;
   const tempP = document.createElement('p');
-  tempP.innerText = `weather is ${temp}°C`;
-  const tempD = document.createElement('p');
-  tempD.innerText = `like-${des}`;
-  div.appendChild(timeP);
-  div.appendChild(tempP);
-  div.appendChild(tempD);
-  daysForecast.appendChild(div);
+  tempP.innerText = `${temp}°C`;
+  const tempD = document.createElement('img');
+  tempD.style.width = '1.5rem';
+  tempD.src = des;
+  smallDiv.append(timeP);
+  smallDiv.append(tempP);
+  smallDiv.append(tempD);
+  daysForecast.append(smallDiv);
+  // const div = document.createElement('div');
+  // div.style.display = 'flex';
+  // div.style.flexDirection = 'row';
+  // div.style.gap = '5px'
+  // const timeP = document.createElement('p');
+  // timeP.innerText = `On-${time}`;
+  // const tempP = document.createElement('p');
+  // tempP.innerText = `weather is ${temp}°C`;
+  // const tempD = document.createElement('p');
+  // tempD.innerText = `like-${des}`;
+  // div.appendChild(timeP);
+  // div.appendChild(tempP);
+  // div.appendChild(tempD);
+  // daysForecast.appendChild(div);
 });
 }
 // time
