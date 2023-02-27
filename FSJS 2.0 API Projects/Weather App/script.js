@@ -62,7 +62,7 @@ celsius.innerHTML = data.current.temp_c;
 fahrenheit.innerHTML = data.current.temp_f;
 humidity.innerHTML = data.current.humidity;
 wind.innerHTML = data.current.wind_kph;
-weatherIcon.src = data.current.condition.icon;
+// weatherIcon.src = data.current.condition.icon;
 description.innerHTML = data.current.condition.text;
 
 // Local time setting
@@ -75,39 +75,62 @@ hour = hour < 10 ? '0' + hour : hour;
 minutes = minutes < 10 ? '0' + minutes : minutes;
 let displayTime = hour + ":" + minutes;
 timeDis.innerHTML = displayTime; 
+let weatherText = data.current.condition.text;
+
 
 // Weather card background
-switch (data.current.condition.text) {
-  case 'Sunny':
-    WeatherImageCard.style.backgroundColor = '#faf500';
-    break;
-  case 'Partly cloudy':
-    WeatherImageCard.style.backgroundColor = '#d3d3d1';
-    break;
-  case 'Overcast':
-    WeatherImageCard.style.backgroundColor = '#ffffff';
-    break;
-  case 'Mist':
-    WeatherImageCard.style.backgroundColor = '#b4bfc0';
-    break;
-  case 'Clear':
-    WeatherImageCard.style.backgroundColor = '#8cd0f7';
-    break;
-  case 'Fog':
-    WeatherImageCard.style.backgroundColor = '#b8cbd5';
-    break;
-  case 'Blizzard':
-    WeatherImageCard.style.backgroundColor = '#ace5ee';
-    break;
-  case 'Heavy snow':
-    WeatherImageCard.style.backgroundColor = '#5cb0cd';
-    break;
-  case 'Light snow':
-    WeatherImageCard.style.backgroundColor = '#adfffd';
-    break;
-  default:
-    WeatherImageCard.style.backgroundColor = '#758c94';
+// Now here changed source of weather iCon to look more unique
+if (weatherText === 'Sunny') {
+  weatherIcon.src = './Assets/Sunny_adsy.png';
+} else if (weatherText === 'Partly cloudy'||weatherText === 'Cloudy') {
+  weatherIcon.src = './Assets/PartlyC_adsy.png';
+} else if (weatherText === 'Overcast') {
+  weatherIcon.src = './Assets/Overcast_adsy.png';
+} else if (weatherText === 'Thundery outbreaks possible') {
+  weatherIcon.src = './Assets/Thunder_adsy.png';
+} else if (weatherText === 'Clear') {
+  weatherIcon.src = './Assets/Clear_adsy.png';
+} else if (weatherText === 'Blowing snow'||weatherText === 'Fog'||weatherText === 'Freezing fog'||weatherText === 'Light snow'||weatherText === 'Heavy snow'||weatherText === 'Moderate snow') {
+  weatherIcon.src = './Assets/Cold_adsy.png';
+} else if (weatherText === 'Light rain'||weatherText === 'Moderate rain'||weatherText === 'Heavy rain') {
+  weatherIcon.src = './Assets/Rainy_adsy.png';
+} else {
+  weatherIcon.src = data.current.condition.icon;
 }
+
+
+// In older version
+// switch (data.current.condition.text) {
+//   case 'Sunny':
+//     WeatherImageCard.style.backgroundColor = '#faf500';
+//     break;
+//   case 'Partly cloudy':
+//     WeatherImageCard.style.backgroundColor = '#d3d3d1';
+//     break;
+//   case 'Overcast':
+//     WeatherImageCard.style.backgroundColor = '#ffffff';
+//     break;
+//   case 'Mist':
+//     WeatherImageCard.style.backgroundColor = '#b4bfc0';
+//     break;
+//   case 'Clear':
+//     WeatherImageCard.style.backgroundColor = '#8cd0f7';
+//     break;
+//   case 'Fog':
+//     WeatherImageCard.style.backgroundColor = '#b8cbd5';
+//     break;
+//   case 'Blizzard':
+//     WeatherImageCard.style.backgroundColor = '#ace5ee';
+//     break;
+//   case 'Heavy snow':
+//     WeatherImageCard.style.backgroundColor = '#5cb0cd';
+//     break;
+//   case 'Light snow':
+//     WeatherImageCard.style.backgroundColor = '#adfffd';
+//     break;
+//   default:
+//     WeatherImageCard.style.backgroundColor = '#758c94';
+// }
 // Weather forecasting
 const fetchForecast = await fetch(
   `https://api.weatherapi.com/v1/forecast.json?key=dc73cc4621524c7cb43105951231102&q=${city}`
