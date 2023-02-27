@@ -119,9 +119,13 @@ const forecastData = foreData.forecast.forecastday[0];
 const hourlyData = forecastData.hour;
 
 hourlyData.forEach(hour => {
-  const time = hour.time.slice(11, 16);
+  // In this second version thought, I made  a little bit changes with the time to understandable of 12hrs format of forecast section
+  const tempHour= hour.time.slice(11, 13);
+  let amPmTemp = tempHour >= 12 ? ' pm' : ' am';
+  let fTempHour = tempHour % 12 || 12;
   const temp = hour.temp_c;
   const des = hour.condition.icon;
+// Implemented grid tech here to display the forecast more beautifully 
   daysForecast.style.display = 'grid';
   daysForecast.style.gridTemplateColumns = 'auto auto auto auto';
   daysForecast.style.columnGap = '1rem';
@@ -136,7 +140,7 @@ hourlyData.forEach(hour => {
   smallDiv.style.justifyContent = 'center';
   smallDiv.style.padding='6px';
   const timeP = document.createElement('p');
-  timeP.innerText = time;
+  timeP.innerText = fTempHour + amPmTemp; //+ ':' + tempMinute
   const tempP = document.createElement('p');
   tempP.innerText = `${temp}°C`;
   const tempD = document.createElement('img');
