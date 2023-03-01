@@ -6,3 +6,5 @@ In the process of creating this page, I learned so many things I didn't know and
 In this coding process, I learned about JSX, Arrow function, react objects, spread, multiple props, and using the same component more than once.
 
 Also implemented responsive tailwind CSS, which means that it is compatible with all devices from 3XL to Sm(😉)
+
+And Live link https://pajju-dev-pw-skills-clone.netlify.app/
