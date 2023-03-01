@@ -9,6 +9,8 @@ import Center from './Components/Center';
 import Achievers from './Components/Achievers';
 import Line from './Components/Line';
 import Popular from './Components/Popular';
+import Products from './Components/Products';
+import Footer from './Components/Footer';
 const App = () =>(
     <>
         <Nav/>
@@ -27,7 +29,10 @@ const App = () =>(
         <Header head={"Community Programs"}/>
         <Line text={"Open to all pro-live classes on Youtube for free."}/>
         <Popular/>
+        <Header head={"Our Products"}/>
+        <Products/>
+        <Footer/>
     </>
 )
 
-export default App
+export default App;
