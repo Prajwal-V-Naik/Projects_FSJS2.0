@@ -91,3 +91,17 @@ site-link : Copyright
 
 ##### Code-link
 [File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20DOM%20Assignments)
+
+### API project
+**Weather Api project**
+
+**Climate App**
+
+#### Code-link
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20API%20Projects/Weather%20App)
+
+### React JS Project
+**PW-Skills Clone design**
+
+### Cod-link
+[File-link](https://github.com/Prajwal-V-Naik/Projects_FSJS2.0/tree/main/FSJS%202.0%20ReactJS/clone-pw-skills)
