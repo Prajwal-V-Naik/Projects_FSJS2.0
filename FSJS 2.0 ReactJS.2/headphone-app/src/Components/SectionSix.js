@@ -5,6 +5,7 @@ import Blue from '../Assets/Images/blue.png'
 import NightBlack from '../Assets/Images/nightBlack.png'
 import TwilightGray from '../Assets/Images/twilightGray.png'
 import Bag from '../Assets/Icons/shoppingBag.png'
+import Style from '../Assets/Icons/productLogo.png'
 
 const Card = ({image , name , price}) =>(
     <div className='flex flex-col justify-center items-center'>
@@ -21,18 +22,15 @@ const Card = ({image , name , price}) =>(
 
 function SectionSix() {
   return (
-    <div className='grid grid-cols-2 gap-4 justify-items-center content-center md:grid-cols-3 my-4 mx-3 px-5 py-14 md:px-14 md:py-16 md:my-14 lg:px-20 2xl:px-56'>
-        <Card image={Black} name='Black' price='N299K'/>
-        <Card image={RedBlack} name='Red' price='N299K'/>
-        <Card image={NightBlack} name='Orange' price='N299K'/>
-        <Card image={Blue} name='Blue' price='N299K'/>
-        <Card image={TwilightGray} name='Gold' price='N299K'/>
-        {/* <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/> */}
+    <div className='my-8 px-4 py-7 md:px-14 md:py-8 lg:px-20 lg:py-9 2xl:px-56 flex flex-col justify-center items-center gap-10 2xl:my-14'>
+        <img src={Style} alt='' className='w-64 md:w-80 lg:w-[22rem] 2xl:w-[28rem]'/>
+        <div className='grid grid-cols-2 gap-14 justify-items-center content-center md:grid-cols-3 my-4 mx-3 px-5 md:px-14  md:my-5 lg:px-20 2xl:px-56'>
+            <Card image={Black} name='Black' price='N299K'/>
+            <Card image={RedBlack} name='Red' price='N299K'/>
+            <Card image={NightBlack} name='Orange' price='N299K'/>
+            <Card image={Blue} name='Blue' price='N299K'/>
+            <Card image={TwilightGray} name='Gold' price='N299K'/>
+        </div>
     </div>
   )
 }
