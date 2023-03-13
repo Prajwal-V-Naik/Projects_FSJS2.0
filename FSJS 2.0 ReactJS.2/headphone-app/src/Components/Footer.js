@@ -8,34 +8,34 @@ import LinkedIn from '../Assets/Icons/linkedin.png'
 
 function Footer() {
   return (
-    <div className='my-4 mx-3 px-5 py-14 md:px-14 md:py-16 md:my-14 lg:px-20 2xl:px-56 flex flex-col-reverse justify-center items-start gap-10'>
+    <div className='my-4 mx-3 px-5 py-14 md:px-0 md:py-16 md:my-14 lg:gap-16 2xl:px-60 2xl:justify-between flex flex-col-reverse justify-center items-center gap-10 md:flex-row md:gap-12'>
         <div>
-            <img src={FootLogo} alt=''/>
+            <img src={FootLogo} alt='' />
         </div>
-        <div>
-            <h3>Products</h3>
-            <p>HeadPhones</p>
-            <p>EarPhones</p>
-            <p>EarBuds</p>
-            <p>Accessories</p>
+        <div className='flex flex-col justify-center items-center gap-1 2xl:basis-2'>
+            <h3 className='text-2xl font-bold text-red-300 underline'>Products</h3>
+            <p className='hover:underline'>HeadPhones</p>
+            <p className='hover:underline'>EarPhones</p>
+            <p className='hover:underline'>EarBuds</p>
+            <p className='hover:underline'>Accessories</p>
         </div>
-        <div>
-            <h3>Support</h3>
-            <p>Product Help</p>
-            <p>Register</p>
-            <p>Updates</p>
-            <p>Provides</p>
+        <div className='flex flex-col justify-center items-center gap-1 2xl:basis-2'>
+            <h3 className='text-2xl font-bold text-red-300 underline'>SUPPORT</h3>
+            <p className='hover:underline'>Product Help</p>
+            <p className='hover:underline'>Register</p>
+            <p className='hover:underline'>Updates</p>
+            <p className='hover:underline'>Provides</p>
         </div>
-        <div>
-            <form className='flex flex-row gap-4 p-4'>
-                <input type='email' placeholder='Email'></input>
-                <button className='flex flex-row justify-center items-center'><img src={Send} alt=''/>Subscribe</button>
+        <div className='2xl:basis-1/3 '>
+            <form className='flex flex-col justify-center items-center 2xl:flex-row gap-3 p-4 bg-[#333333] rounded-lg'>
+                <input type='email' placeholder='Email' className='p-2 rounded-lg text-black'></input>
+                <button className='flex flex-row justify-center items-center gap-3 p-2 hover:bg-black rounded-lg'><img src={Send} alt='' className='w-6'/>Subscribe</button>
             </form>
-            <div>
-                <img src={FaceBook} alt=''/>
-                <img src={Twitter} alt=''/>
-                <img src={Instagram} alt=''/>
-                <img src={LinkedIn} alt=''/>
+            <div className='mt-2 flex flex-row justify-center items-center gap-4'>
+                <img src={FaceBook} alt='' className='w-10'/>
+                <img src={Twitter} alt='' className='w-10'/>
+                <img src={Instagram} alt='' className='w-10'/>
+                <img src={LinkedIn} alt='' className='w-10'/>
             </div>
         </div>
     </div>
